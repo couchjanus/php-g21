@@ -62,41 +62,51 @@ function init() {
     setlocale(LC_ALL, '');
     // Установка ukraine локали
     setlocale(LC_ALL, 'uk_UA');
+    
+    setErrorLogging();
 }
 
+
+// Выключение протоколирования ошибок
+error_reporting(0);
+
+// Включать в отчёт простые описания ошибок
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+// Включать в отчёт E_NOTICE сообщения (добавятся сообщения о
+// непроинициализированных переменных или ошибках в именах переменных)
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+
+// Добавлять сообщения обо всех ошибках, кроме E_NOTICE
+error_reporting(E_ALL & ~E_NOTICE);
+
+// Добавлять в отчёт все ошибки PHP
+error_reporting(E_ALL);
+
+// Добавлять в отчёт все ошибки PHP
+// Если передать -1, будут отображаться все возможные ошибки, даже если в новых версиях PHP добавятся уровни или константы. 
+error_reporting(-1);
+
+// То же, что и error_reporting(E_ALL);
+ini_set('error_reporting', E_ALL);
+
 function setErrorLogging(){
-if (APP_ENV == 'local') {
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL | E_WARNING | E_PARSE | E_NOTICE| E_DEPRECATED);
-    ini_set('display_errors', "1");
-} 
-else{
-    error_reporting(E_ALL);
-    ini_set('display_errors', "0");
-}
-ini_set('log_errors', "1");
-ini_set('error_log', LOGS . '/error_log.php');
+    if (APP_ENV == 'local') {
+        ini_set('display_startup_errors', 1);
+        error_reporting(E_ALL | E_WARNING | E_PARSE | E_NOTICE| E_DEPRECATED);
+        ini_set('display_errors', "1");
+    } 
+    else{
+        error_reporting(E_ALL);
+        ini_set('display_errors', "0");
+    }
+    ini_set('log_errors', "1");
+    ini_set('error_log', LOGS . '/error_log.php');
 }
 
 init();
-setErrorLogging();
+
 error_log("Hello Log!");
-
-
-// switch (uri()) {
-//     case '':
-//         require_once CONTROLLERS_PATH.'/HomeController.php';
-//         break;
-//     case 'about':
-//         require_once CONTROLLERS_PATH.'/AboutController.php';
-//         break;
-//     case 'contact':
-//         require_once CONTROLLERS_PATH.'/ContactController.php';
-//         break;
-//     default:
-//         echo "<h1>404: Oops, Page not found!</h1>";
-//         error_log("404: Oops, Page not found!");
-// }
 
 $routes = require_once CONFIG.'/routes.php';
 var_dump($routes);
