@@ -7,16 +7,16 @@
                 <i class="nav-toggle fas fa-bars"></i>
             </label>
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <span class="font-weight-bold text-uppercase text-dark">Shopaholic</span>
                 </a>
             </div>
 
             <ul class="navbar-nav effect-brackets">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Shop</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
 
             <ul class="navbar-tool">

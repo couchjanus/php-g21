@@ -6,7 +6,46 @@ const CONFIG = ROOT.'/config';
 
 require_once CONFIG.'/app.php';
 
+
+function sendHeaders($status = 200, $headers = []){
+
+    $statusTexts = [
+        200 => 'OK',
+        302 => 'Found',
+        400 => 'Bad Request',
+        401 => 'Unauthorized',
+        403 => 'Forbidden',
+        404 => 'Not Found',
+        500 => 'Internal Server Error'
+    ];
+
+    $statusText = $statusTexts[$status];
+
+    $version = '1.0';
+    $charset = 'UTF-8';
+
+    // check headers have already been sent by the developer
+    if (headers_sent()) {
+        return;
+    }
+
+    // status
+    header("HTTP/$version $status $statusText");
+
+    // Content-Type
+    // if Content-Type is already exists in headers, then don't send it
+    if(!array_key_exists('Content-Type', $headers)){
+        header('Content-Type: ' . 'text/html; charset=' . $charset);
+    }
+
+    // headers
+    foreach ($headers as $name => $value) {
+        header($name .': '. $value, true, $status);
+    }
+}
+
 function render($view, $params = null) {
+    sendHeaders();
     ob_start();
     $content = renderView($view, $params); 
     require_once VIEWS."/layouts/app.php";
@@ -29,31 +68,6 @@ function uri() {
     );
     return trim($uri, '/') ?? '';
 }
-
-echo "<h2>Get date default timezone</h2>";
-echo date_default_timezone_get();// Получение временной зоны по умолчанию
-echo "<h2>Get date timezone from php.ini</h2>";
-if (ini_get('date.timezone')) {
-    echo 'date.timezone: ' . ini_get('date.timezone');// Получение временной зоны по умолчанию
-}
-// Проверяет, есть ли в списке определенных функций функция function_name
-if (function_exists('date_default_timezone_set')) {
-    date_default_timezone_set('Europe/Kiev');   
-}
-
-// Эта функция возвращает FALSE для языковых конструкций, таких как include_once или echo.
-if (function_exists('echo')) {
-    echo "it's me";   
-}
-
-// Установка временной зоны по умолчанию
-echo "<h2>Set date default timezone</h2>";
-date_default_timezone_set('Europe/Kiev');
-
-if (date_default_timezone_get()) {
-    echo 'date_default_timezone_set: ' . date_default_timezone_get();
-}
-
 function init() {
     // Устанавливаем временную зону по умолчанию
     if (function_exists('date_default_timezone_set')) {
@@ -66,29 +80,6 @@ function init() {
     setErrorLogging();
 }
 
-
-// Выключение протоколирования ошибок
-error_reporting(0);
-
-// Включать в отчёт простые описания ошибок
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
-
-// Включать в отчёт E_NOTICE сообщения (добавятся сообщения о
-// непроинициализированных переменных или ошибках в именах переменных)
-error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
-
-// Добавлять сообщения обо всех ошибках, кроме E_NOTICE
-error_reporting(E_ALL & ~E_NOTICE);
-
-// Добавлять в отчёт все ошибки PHP
-error_reporting(E_ALL);
-
-// Добавлять в отчёт все ошибки PHP
-// Если передать -1, будут отображаться все возможные ошибки, даже если в новых версиях PHP добавятся уровни или константы. 
-error_reporting(-1);
-
-// То же, что и error_reporting(E_ALL);
-ini_set('error_reporting', E_ALL);
 
 function setErrorLogging(){
     if (APP_ENV == 'local') {
@@ -106,26 +97,47 @@ function setErrorLogging(){
 
 init();
 
-error_log("Hello Log!");
+function conf($mix) {
+    $url = ROOT."/config/".$mix.".json";
+    if (file_exists($url)) {
+        $jsonFile = file_get_contents($url);
+        return json_decode($jsonFile, TRUE);
+    } else {
+        echo "The file $url does not exists";
+        return false;
+    }
+}
 
 $routes = require_once CONFIG.'/routes.php';
-var_dump($routes);
 
 $result = false;
+
+function getController($path) {
+    $segments = explode('\\', $path);
+    $controller = array_pop($segments);
+    $segments = array_pop($segments);
+    $segments = $segments ? "/$segments":'';
+    return [$segments, $controller];
+}
 
 foreach ($routes as $route => $path) {
     //Сравниваем route и $uri
     if ($route == uri()) {
+        list($segment, $controller) = getController($path);
         //Подключаем файл контроллера
-        include_once CONTROLLERS_PATH."/${path}";
-        $result = true;
-        break;
+        $controllerPath = CONTROLLERS_PATH."${segment}/${controller}";
+//        var_dump($controllerPath);
+        if (file_exists($controllerPath)) {
+            include_once $controllerPath;
+            $result = true;
+            break;
+        }
     }
 }
 
+
 if(!$result){
+    sendHeaders(404);
     echo "<h1>404: Oops, Page not found!</h1>";
-    var_dump(debug_backtrace());
-    debug_print_backtrace();
     error_log("404: Oops, Page not found!");
 }

@@ -39,7 +39,7 @@
             <!-- 2 columns -->
             <div class="row mb-4">
                 <div class="col-lg-6">
-                    <p class="text-muted mb-0">&copy; 2020 All rights reserved.</p>
+                    <p class="text-muted mb-0">&copy; <?=date("Y")?> All rights reserved.</p>
                 </div>
                 <div class="col-lg-6 text-lg-right">
                     <p class="text-white reset-anchor">Template designed by <a href="#">My Temple</a></p>
