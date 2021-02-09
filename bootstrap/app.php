@@ -1,11 +1,7 @@
 <?php
 
-define('ROOT', str_replace("\\", "/", dirname(__DIR__)));
-
-const CONFIG = ROOT.'/config';
-
-require_once CONFIG.'/app.php';
-
+define('ROOT', realpath(__DIR__ . "/../"));
+require_once ROOT.'/config/app.php';
 
 function sendHeaders($status = 200, $headers = []){
 
@@ -62,7 +58,7 @@ function renderView($view, $params)
     return ob_get_clean();
 }
 
-function uri() {
+function uri():string {
     $uri = urldecode(
         parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
     );
@@ -97,7 +93,7 @@ function setErrorLogging(){
 
 init();
 
-function conf($mix) {
+function conf($mix):bool {
     $url = ROOT."/config/".$mix.".json";
     if (file_exists($url)) {
         $jsonFile = file_get_contents($url);
@@ -108,11 +104,11 @@ function conf($mix) {
     }
 }
 
-$routes = require_once CONFIG.'/routes.php';
+$routes = require_once ROOT.'/config/routes.php';
 
 $result = false;
 
-function getController($path) {
+function getController($path):array {
     $segments = explode('\\', $path);
     $controller = array_pop($segments);
     $segments = array_pop($segments);
