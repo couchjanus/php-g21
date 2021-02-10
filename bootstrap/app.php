@@ -93,7 +93,7 @@ function setErrorLogging(){
 
 init();
 
-function conf($mix):bool {
+function conf($mix) {
     $url = ROOT."/config/".$mix.".json";
     if (file_exists($url)) {
         $jsonFile = file_get_contents($url);

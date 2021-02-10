@@ -139,3 +139,16 @@ Stack trace:
 [07-Feb-2021 22:53:02 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
 [07-Feb-2021 22:53:02 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
 [07-Feb-2021 22:53:02 Europe/Kiev] PHP   3. include_once() /home/janus/www/php-g21/bootstrap/app.php:122
+[10-Feb-2021 09:57:22 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: conf(): Return value must be of type bool, array returned in /home/janus/www/php-g21/bootstrap/app.php:100
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/ContactController.php(3): conf()
+#1 /home/janus/www/php-g21/bootstrap/app.php(127): include_once('...')
+#2 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#3 {main}
+  thrown in /home/janus/www/php-g21/bootstrap/app.php on line 100
+[10-Feb-2021 10:34:21 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /home/janus/www/php-g21/app/Controllers/ContactController.php:18
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(127): include_once()
+#1 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#2 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 18

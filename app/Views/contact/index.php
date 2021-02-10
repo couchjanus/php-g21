@@ -20,26 +20,15 @@
 
         <div class="col-md-8">
             <table class="contact">
-                <form id="contact-form">
+                <form id="contact-form" method="post">
                     <tr class="table-row">
                         <td class="table-cell half">
                             <label>Name</label>
                             <input type="text" name="name" id="name" required>
                         </td>
                         <td class="table-cell half">
-                            <label>Company</label>
-                            <input type="text" name="company" id="company">
-                        </td>
-                    </tr>
-
-                    <tr class="table-row">
-                        <td class="table-cell">
                             <label>E-mail Address</label>
                             <input type="email" name="email" id="email" required>
-                        </td>
-                        <td class="table-cell">
-                            <label>Phone Number</label>
-                            <input type="text" name="phone" id="phone">
                         </td>
                     </tr>
 
@@ -62,6 +51,12 @@
 
 
     </div>
+
+    <?php if (isset($messages)):?>
+        <?php foreach ($messages as $row):?>
+            <li class="mb-2">Customer <?=$row['name'];?> wrote this: <?=$row['message'];?> at: <?=date("d-m-Y", strtotime($row['created_at']));?></li>
+        <?php endforeach;?>
+    <?php endif;?>
 </section>
 
 <!-- NEWSLETTER-->
