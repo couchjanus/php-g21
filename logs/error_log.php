@@ -152,3 +152,95 @@ Stack trace:
 #1 /home/janus/www/php-g21/public/index.php(3): require_once('...')
 #2 {main}
   thrown in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 18
+[11-Feb-2021 21:16:19 Europe/Kiev] PHP Fatal error:  Uncaught Error: Undefined constant "address" in /home/janus/www/php-g21/app/Views/admin/contact/address.php:13
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(57): include_once()
+#1 /home/janus/www/php-g21/bootstrap/app.php(46): renderView()
+#2 /home/janus/www/php-g21/app/Controllers/Admin/ContactController.php(32): render()
+#3 /home/janus/www/php-g21/bootstrap/app.php(127): include_once('...')
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Views/admin/contact/address.php on line 13
+[11-Feb-2021 21:17:44 Europe/Kiev] PHP Fatal error:  Uncaught Error: Undefined constant "address" in /home/janus/www/php-g21/app/Views/admin/contact/address.php:13
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(57): include_once()
+#1 /home/janus/www/php-g21/bootstrap/app.php(46): renderView()
+#2 /home/janus/www/php-g21/app/Controllers/Admin/ContactController.php(32): render()
+#3 /home/janus/www/php-g21/bootstrap/app.php(127): include_once('...')
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Views/admin/contact/address.php on line 13
+[11-Feb-2021 21:18:16 Europe/Kiev] PHP Warning:  Undefined array key 0 in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 35
+[11-Feb-2021 21:18:16 Europe/Kiev] PHP Stack trace:
+[11-Feb-2021 21:18:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[11-Feb-2021 21:18:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[11-Feb-2021 21:18:16 Europe/Kiev] PHP   3. include_once() /home/janus/www/php-g21/bootstrap/app.php:127
+[11-Feb-2021 21:19:45 Europe/Kiev] PHP Fatal error:  Uncaught Error: Undefined constant "address" in /home/janus/www/php-g21/app/Views/admin/contact/address.php:13
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(57): include_once()
+#1 /home/janus/www/php-g21/bootstrap/app.php(46): renderView()
+#2 /home/janus/www/php-g21/app/Controllers/Admin/ContactController.php(32): render()
+#3 /home/janus/www/php-g21/bootstrap/app.php(127): include_once('...')
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Views/admin/contact/address.php on line 13
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP Warning:  Undefined array key "min" in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 15
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP Stack trace:
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP   3. include_once() /home/janus/www/php-g21/bootstrap/app.php:127
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP   4. validate($data = ['name' => ['required' => 1, 'min' => 3, 'field_name' => 'name', 'value' => 'te'], 'email' => ['required' => 1, 'mailable' => 1, 'field_name' => 'email', 'value' => 'test@loc'], 'message' => ['required' => 1, 'field_name' => 'message', 'value' => '']]) /home/janus/www/php-g21/app/Controllers/ContactController.php:56
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP Warning:  Undefined array key "min" in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 15
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP Stack trace:
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP   3. include_once() /home/janus/www/php-g21/bootstrap/app.php:127
+[12-Feb-2021 09:41:11 Europe/Kiev] PHP   4. validate($data = ['name' => ['required' => 1, 'min' => 3, 'field_name' => 'name', 'value' => 'te'], 'email' => ['required' => 1, 'mailable' => 1, 'field_name' => 'email', 'value' => 'test@loc'], 'message' => ['required' => 1, 'field_name' => 'message', 'value' => '']]) /home/janus/www/php-g21/app/Controllers/ContactController.php:56
+[12-Feb-2021 09:47:23 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function strle() in /home/janus/www/php-g21/app/Controllers/ContactController.php:15
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/ContactController.php(56): validate()
+#1 /home/janus/www/php-g21/bootstrap/app.php(127): include_once('...')
+#2 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#3 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 15
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP Warning:  Undefined array key "min" in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 15
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP Stack trace:
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP   3. include_once() /home/janus/www/php-g21/bootstrap/app.php:127
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP   4. validate($data = ['name' => ['required' => 1, 'min' => 3, 'field_name' => 'name', 'value' => 'te'], 'email' => ['required' => 1, 'mailable' => 1, 'field_name' => 'email', 'value' => 'test@loc'], 'message' => ['required' => 1, 'field_name' => 'message', 'value' => '']]) /home/janus/www/php-g21/app/Controllers/ContactController.php:56
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP Warning:  Undefined array key "min" in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 15
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP Stack trace:
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP   3. include_once() /home/janus/www/php-g21/bootstrap/app.php:127
+[12-Feb-2021 09:47:43 Europe/Kiev] PHP   4. validate($data = ['name' => ['required' => 1, 'min' => 3, 'field_name' => 'name', 'value' => 'te'], 'email' => ['required' => 1, 'mailable' => 1, 'field_name' => 'email', 'value' => 'test@loc'], 'message' => ['required' => 1, 'field_name' => 'message', 'value' => '']]) /home/janus/www/php-g21/app/Controllers/ContactController.php:56
+[12-Feb-2021 12:34:36 Europe/Kiev] PHP Parse error:  syntax error, unexpected token ";" in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 18
+[12-Feb-2021 12:35:49 Europe/Kiev] PHP Deprecated:  Required parameter $min follows optional parameter $value in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 45
+[12-Feb-2021 12:35:49 Europe/Kiev] PHP Stack trace:
+[12-Feb-2021 12:35:49 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[12-Feb-2021 12:35:49 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[12-Feb-2021 12:35:49 Europe/Kiev] PHP Fatal error:  Uncaught ValueError: mb_strlen(): Argument #2 ($encoding) must be a valid encoding, "3" given in /home/janus/www/php-g21/app/Controllers/ContactController.php:17
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/ContactController.php(17): mb_strlen()
+#1 /home/janus/www/php-g21/app/Controllers/ContactController.php(67): validate()
+#2 /home/janus/www/php-g21/bootstrap/app.php(127): include_once('...')
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 17
+[12-Feb-2021 12:39:25 Europe/Kiev] PHP Deprecated:  Required parameter $min follows optional parameter $value in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 45
+[12-Feb-2021 12:39:25 Europe/Kiev] PHP Stack trace:
+[12-Feb-2021 12:39:25 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[12-Feb-2021 12:39:25 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[12-Feb-2021 12:39:25 Europe/Kiev] PHP Fatal error:  Uncaught ValueError: mb_strlen(): Argument #2 ($encoding) must be a valid encoding, "3" given in /home/janus/www/php-g21/app/Controllers/ContactController.php:17
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/ContactController.php(17): mb_strlen()
+#1 /home/janus/www/php-g21/app/Controllers/ContactController.php(67): validate()
+#2 /home/janus/www/php-g21/bootstrap/app.php(127): include_once('...')
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 17
+[12-Feb-2021 12:42:05 Europe/Kiev] PHP Deprecated:  Required parameter $min follows optional parameter $value in /home/janus/www/php-g21/app/Controllers/ContactController.php on line 45
+[12-Feb-2021 12:42:05 Europe/Kiev] PHP Stack trace:
+[12-Feb-2021 12:42:05 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[12-Feb-2021 12:42:05 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3

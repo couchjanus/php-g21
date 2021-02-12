@@ -40,11 +40,11 @@ function sendHeaders($status = 200, $headers = []){
     }
 }
 
-function render($view, $params = null) {
+function render($view, $params = null, $layout='app') {
     sendHeaders();
     ob_start();
     $content = renderView($view, $params); 
-    require_once VIEWS."/layouts/app.php";
+    require_once VIEWS."/layouts/$layout.php";
     echo str_replace('{{content}}', $content, ob_get_clean());
 }
 
