@@ -244,3 +244,5 @@ Stack trace:
 [12-Feb-2021 12:42:05 Europe/Kiev] PHP Stack trace:
 [12-Feb-2021 12:42:05 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
 [12-Feb-2021 12:42:05 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[13-Feb-2021 11:46:38 Europe/Kiev] 404: Oops, Page not found!
+[13-Feb-2021 11:51:52 Europe/Kiev] <li>404: Oops, Page not found!</li>

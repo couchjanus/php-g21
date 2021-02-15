@@ -1,9 +1,19 @@
 <?php
 
+//return [
+//    "" => "HomeController",
+//    "about" => "AboutController",
+//    "blog" => "BlogController",
+//    "contact" => "ContactController",
+//    "admin" => "Admin\DashboardController",
+//    "admin/contact" => "Admin\ContactController",
+//];
+
 return [
-    "" => "HomeController.php",
-    "about" => "AboutController.php",
-    "contact" => "ContactController.php",
-    "admin" => "Admin\DashboardController.php",
-    "admin/contact" => "Admin\ContactController.php",
+    "" => "HomeController@index",
+    "about" => "AboutController@index",
+    "blog" => "BlogController@index",
+    "contact" => "ContactController@index",
+    "admin" => "Admin\DashboardController@index",
+    "admin/contact" => "Admin\ContactController@index",
 ];
