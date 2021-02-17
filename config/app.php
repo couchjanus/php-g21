@@ -8,3 +8,4 @@ const APP_ENV = 'local';
 const APPNAME = 'Great Shopaholic';
 const SLOGAN = "Let's Build Cool Site";
 const LOGS = ROOT.'/logs';
+const DB_CONFIG_FILE = ROOT.'/config/db.php';

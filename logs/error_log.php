@@ -246,3 +246,133 @@ Stack trace:
 [12-Feb-2021 12:42:05 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
 [13-Feb-2021 11:46:38 Europe/Kiev] 404: Oops, Page not found!
 [13-Feb-2021 11:51:52 Europe/Kiev] <li>404: Oops, Page not found!</li>
+[16-Feb-2021 10:12:56 Europe/Kiev] PHP Warning:  Undefined property: Connection::$options in /home/janus/www/php-g21/core/Connection.php on line 17
+[16-Feb-2021 10:12:56 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 10:12:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/bootstrap/app.php:0
+[16-Feb-2021 10:12:56 Europe/Kiev] PHP   2. Connection->__construct() /home/janus/www/php-g21/bootstrap/app.php:110
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type bool in /home/janus/www/php-g21/core/Connection.php on line 14
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:113
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   5. Connection->__construct() /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:12
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in /home/janus/www/php-g21/core/Connection.php on line 25
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:113
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   5. Connection->__construct() /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:12
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   6. Connection->makeDsn($config = NULL) /home/janus/www/php-g21/core/Connection.php:14
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, null given in /home/janus/www/php-g21/core/Connection.php on line 27
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:113
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   5. Connection->__construct() /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:12
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   6. Connection->makeDsn($config = NULL) /home/janus/www/php-g21/core/Connection.php:14
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type bool in /home/janus/www/php-g21/core/Connection.php on line 17
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:113
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   5. Connection->__construct() /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:12
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type bool in /home/janus/www/php-g21/core/Connection.php on line 17
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:113
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   5. Connection->__construct() /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:12
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type bool in /home/janus/www/php-g21/core/Connection.php on line 17
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:113
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP   5. Connection->__construct() /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:12
+[16-Feb-2021 14:01:26 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name in /home/janus/www/php-g21/core/Connection.php:19
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(12): Connection->__construct()
+#1 /home/janus/www/php-g21/core/Router.php(32): CategoryController->index()
+#2 /home/janus/www/php-g21/bootstrap/app.php(113): require_once('...')
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/core/Connection.php on line 19
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP Warning:  Undefined variable $db in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 14
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:113
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP Warning:  Attempt to read property "pdo" on null in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 14
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:113
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:02:03 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:14
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(32): CategoryController->index()
+#1 /home/janus/www/php-g21/bootstrap/app.php(113): require_once('...')
+#2 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#3 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 14
+[16-Feb-2021 14:05:38 Europe/Kiev] PHP Warning:  Undefined variable $title in /home/janus/www/php-g21/app/Views/layouts/admin.php on line 55
+[16-Feb-2021 14:05:38 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:05:38 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:05:38 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:05:38 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:113
+[16-Feb-2021 14:05:38 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:05:38 Europe/Kiev] PHP   5. render($view = 'admin/categories/index', $params = ['title' => 'Categories List', 'categories' => [0 => class stdClass { ... }, 1 => class stdClass { ... }]], $layout = 'admin') /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:17
+[16-Feb-2021 14:05:38 Europe/Kiev] PHP   6. require_once() /home/janus/www/php-g21/bootstrap/app.php:47
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP Warning:  Undefined variable $categories in /home/janus/www/php-g21/app/Views/admin/categories/index.php on line 2
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:116
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP   5. render($view = 'admin/categories/index', $params = ['title' => 'Categories List', 'categories' => [0 => class stdClass { ... }, 1 => class stdClass { ... }]], $layout = 'admin') /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:17
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP   6. renderView($view = 'admin/categories/index', $params = ['title' => 'Categories List', 'categories' => [0 => class stdClass { ... }, 1 => class stdClass { ... }]]) /home/janus/www/php-g21/bootstrap/app.php:49
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP   7. include_once() /home/janus/www/php-g21/bootstrap/app.php:60
+[16-Feb-2021 14:10:56 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, null given in /home/janus/www/php-g21/app/Views/admin/categories/index.php:2
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(60): include_once()
+#1 /home/janus/www/php-g21/bootstrap/app.php(49): renderView()
+#2 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(17): render()
+#3 /home/janus/www/php-g21/core/Router.php(32): CategoryController->index()
+#4 /home/janus/www/php-g21/bootstrap/app.php(116): require_once('...')
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/app/Views/admin/categories/index.php on line 2
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP Warning:  Undefined variable $view in /home/janus/www/php-g21/app/Views/layouts/partials/admin/toolbar.php on line 15
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:121
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP   5. render($view = 'admin/categories/index', $params = ['categories' => [0 => class stdClass { ... }, 1 => class stdClass { ... }]], $layout = 'admin') /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:17
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP   6. renderView($view = 'admin/categories/index', $params = ['categories' => [0 => class stdClass { ... }, 1 => class stdClass { ... }]]) /home/janus/www/php-g21/bootstrap/app.php:49
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP   7. include_once() /home/janus/www/php-g21/bootstrap/app.php:60
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP   8. includeWithVars($fileName = '/home/janus/www/php-g21/app/Views/layouts/partials/admin/toolbar.php', $vars = ['keywords' => 'Potato, Tomato, Toothpaste', 'title' => 'Hello World']) /home/janus/www/php-g21/app/Views/admin/categories/index.php:2
+[16-Feb-2021 15:04:11 Europe/Kiev] PHP   9. include_once() /home/janus/www/php-g21/bootstrap/app.php:66
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP Warning:  Undefined variable $view in /home/janus/www/php-g21/app/Views/layouts/partials/admin/toolbar.php on line 15
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:121
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP   4. CategoryController->index() /home/janus/www/php-g21/core/Router.php:32
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP   5. render($view = 'admin/categories/index', $params = ['categories' => [0 => class stdClass { ... }, 1 => class stdClass { ... }]], $layout = 'admin') /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:17
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP   6. renderView($view = 'admin/categories/index', $params = ['categories' => [0 => class stdClass { ... }, 1 => class stdClass { ... }]]) /home/janus/www/php-g21/bootstrap/app.php:49
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP   7. include_once() /home/janus/www/php-g21/bootstrap/app.php:60
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP   8. includeWithVars($fileName = '/home/janus/www/php-g21/app/Views/layouts/partials/admin/toolbar.php', $vars = ['keywords' => 'Potato, Tomato, Toothpaste', 'title' => 'Categories List']) /home/janus/www/php-g21/app/Views/admin/categories/index.php:2
+[16-Feb-2021 15:05:34 Europe/Kiev] PHP   9. include_once() /home/janus/www/php-g21/bootstrap/app.php:66
+[16-Feb-2021 16:04:46 Europe/Kiev] PHP Warning:  Undefined array key "status" in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 28
+[16-Feb-2021 16:04:46 Europe/Kiev] PHP Stack trace:
+[16-Feb-2021 16:04:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[16-Feb-2021 16:04:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[16-Feb-2021 16:04:46 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:118
+[16-Feb-2021 16:04:46 Europe/Kiev] PHP   4. CategoryController->store() /home/janus/www/php-g21/core/Router.php:32

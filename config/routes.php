@@ -1,14 +1,5 @@
 <?php
 
-//return [
-//    "" => "HomeController",
-//    "about" => "AboutController",
-//    "blog" => "BlogController",
-//    "contact" => "ContactController",
-//    "admin" => "Admin\DashboardController",
-//    "admin/contact" => "Admin\ContactController",
-//];
-
 return [
     "" => "HomeController@index",
     "about" => "AboutController@index",
@@ -16,4 +7,7 @@ return [
     "contact" => "ContactController@index",
     "admin" => "Admin\DashboardController@index",
     "admin/contact" => "Admin\ContactController@index",
+    "admin/categories" => "Admin\CategoryController@index",
+    "admin/categories/create" => "Admin\CategoryController@create",
+    "admin/categories/store" => "Admin\CategoryController@store",
 ];
