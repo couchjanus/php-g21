@@ -1,12 +1,16 @@
 <?php
 require_once ROOT."/core/Connection.php";
+require_once ROOT."/core/Controller.php";
 
-class CategoryController
+class CategoryController extends Controller
 {
-//    public function __construct()
-//    {
-//    }
+    
+    public function __construct()
+    {
+        parent::__construct('admin');
+    }
 
+    
     public function index()
     {
     	$db = new Connection();
@@ -14,12 +18,12 @@ class CategoryController
 		$stmt = $db->pdo->prepare($sql);
 		$stmt->execute();
 		$categories = $stmt->fetchAll();
-        render('admin/categories/index', ['categories'=>$categories], 'admin');
+        $this->render('admin/categories/index', ['categories'=>$categories]);
     }
 
     public function create()
     {
-        render('admin/categories/create', [], 'admin');
+        $this->render('admin/categories/create');
     }
 
     public function store()

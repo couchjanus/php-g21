@@ -110,9 +110,4 @@ function conf($mix) {
 }
 
 
-require_once ROOT."/core/Connection.php";
-
-// $db = new Connection();
-// var_dump($db);
-
 require_once ROOT."/core/Router.php";

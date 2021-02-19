@@ -376,3 +376,51 @@ Stack trace:
 [16-Feb-2021 16:04:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
 [16-Feb-2021 16:04:46 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:118
 [16-Feb-2021 16:04:46 Europe/Kiev] PHP   4. CategoryController->store() /home/janus/www/php-g21/core/Router.php:32
+[18-Feb-2021 09:41:32 Europe/Kiev] PHP Warning:  require_once(./admin.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/core/View.php on line 15
+[18-Feb-2021 09:41:32 Europe/Kiev] PHP Stack trace:
+[18-Feb-2021 09:41:32 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[18-Feb-2021 09:41:32 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[18-Feb-2021 09:41:32 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:118
+[18-Feb-2021 09:41:32 Europe/Kiev] PHP   4. CategoryController->__construct() /home/janus/www/php-g21/core/Router.php:30
+[18-Feb-2021 09:41:32 Europe/Kiev] PHP   5. CategoryController->__construct($layout = 'admin') /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:10
+[18-Feb-2021 09:41:32 Europe/Kiev] PHP   6. View->__construct($layout = 'admin') /home/janus/www/php-g21/core/Controller.php:17
+[18-Feb-2021 09:41:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required './admin.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/core/View.php:15
+Stack trace:
+#0 /home/janus/www/php-g21/core/Controller.php(17): View->__construct()
+#1 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(10): Controller->__construct()
+#2 /home/janus/www/php-g21/core/Router.php(30): CategoryController->__construct()
+#3 /home/janus/www/php-g21/bootstrap/app.php(118): require_once('...')
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/core/View.php on line 15
+[18-Feb-2021 11:07:51 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Response" not found in /home/janus/www/php-g21/core/Controller.php:22
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(10): Controller->__construct()
+#1 /home/janus/www/php-g21/core/Router.php(30): CategoryController->__construct()
+#2 /home/janus/www/php-g21/bootstrap/app.php(118): require_once('...')
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/core/Controller.php on line 22
+[18-Feb-2021 11:13:24 Europe/Kiev] PHP Warning:  Undefined variable $layout in /home/janus/www/php-g21/core/Controller.php on line 23
+[18-Feb-2021 11:13:24 Europe/Kiev] PHP Stack trace:
+[18-Feb-2021 11:13:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[18-Feb-2021 11:13:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[18-Feb-2021 11:13:24 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g21/bootstrap/app.php:118
+[18-Feb-2021 11:13:24 Europe/Kiev] PHP   4. CategoryController->__construct() /home/janus/www/php-g21/core/Router.php:30
+[18-Feb-2021 11:13:24 Europe/Kiev] PHP   5. CategoryController->__construct($response = *uninitialized*) /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:11
+[18-Feb-2021 11:13:24 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property Controller::$layout of type string in /home/janus/www/php-g21/core/Controller.php:23
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(11): Controller->__construct()
+#1 /home/janus/www/php-g21/core/Router.php(30): CategoryController->__construct()
+#2 /home/janus/www/php-g21/bootstrap/app.php(118): require_once('...')
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/core/Controller.php on line 23
+[18-Feb-2021 11:14:12 Europe/Kiev] PHP Fatal error:  Uncaught Error: Typed property Controller::$layout must not be accessed before initialization in /home/janus/www/php-g21/core/Controller.php:24
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(11): Controller->__construct()
+#1 /home/janus/www/php-g21/core/Router.php(30): CategoryController->__construct()
+#2 /home/janus/www/php-g21/bootstrap/app.php(118): require_once('...')
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/core/Controller.php on line 24

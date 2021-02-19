@@ -1,13 +1,17 @@
 <?php
-class HomeController
+
+require_once ROOT."/core/Controller.php";
+
+    
+class HomeController extends Controller
 {
-//    public function __construct()
-//    {
-//        render('home/index', ['title' => 'Home Page']);
-//    }
+	public function __construct()
+    {
+        parent::__construct('app');
+    }
 
     public function index()
     {
-        render('home/index', ['title' => 'Home Page']);
+        $this->render('home/index', ['title' => 'Home Page']);
     }
 }

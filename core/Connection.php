@@ -18,7 +18,7 @@ class Connection
        } catch (PDOException $e) {
            throw new PDOException($e->getMessage(), (int)$e->getCode());
        }
-   }
+    }
 
     private function makeDsn($config)
     {
