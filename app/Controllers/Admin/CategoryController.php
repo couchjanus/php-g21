@@ -40,4 +40,20 @@ class CategoryController extends Controller
     	}
     }
 
+    public function getByPrimaryKey($id) {
+        $db = new Connection();
+        $stmt = $db->pdo->prepare("SELECT * FROM categories WHERE id = ?");
+        $stmt->execute([$id]);
+        return $stmt->fetch(PDO::FETCH_OBJ);
+   }
+
+
+    public function edit($params){
+        var_dump($params);
+    }
+
+    public function delete($params){
+        var_dump($params);
+    }
+
 }

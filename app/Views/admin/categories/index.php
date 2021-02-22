@@ -22,7 +22,10 @@
               <td><?=$category->id?></td>
               <td><?=$category->name?></td>
               <td><?=$category->status?></td>
-              <td><button class="btn btn-sm btn-outline-info">Edit</button><button class="btn btn-sm btn-outline-danger">Delete</button></td>
+              <td>
+                <a href="/admin/categories/edit/<?=$category->id?>"><button class="btn btn-sm btn-outline-info">Edit</button></a>
+                <a href="/admin/categories/delete/<?=$category->id?>"><button class="btn btn-sm btn-outline-danger">Delete</button></a>
+              </td>
             </tr>
           <?php endforeach?>
           </tbody>

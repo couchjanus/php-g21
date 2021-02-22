@@ -424,3 +424,45 @@ Stack trace:
 #3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
 #4 {main}
   thrown in /home/janus/www/php-g21/core/Controller.php on line 24
+[20-Feb-2021 11:35:13 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Router::__construct(), 0 passed in /home/janus/www/php-g21/bootstrap/app.php on line 52 and exactly 1 expected in /home/janus/www/php-g21/core/Router.php:9
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(52): Router->__construct()
+#1 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#2 {main}
+  thrown in /home/janus/www/php-g21/core/Router.php on line 9
+[20-Feb-2021 11:36:40 Europe/Kiev] PHP Fatal error:  Cannot redeclare Controller::__construct() in /home/janus/www/php-g21/core/Controller.php on line 21
+[20-Feb-2021 11:36:40 Europe/Kiev] PHP Stack trace:
+[20-Feb-2021 11:36:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[20-Feb-2021 11:36:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[20-Feb-2021 11:36:40 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[20-Feb-2021 11:36:40 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'HomeController', $action = 'index') /home/janus/www/php-g21/core/Router.php:17
+[20-Feb-2021 11:36:40 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g21/core/Router.php:37
+[20-Feb-2021 11:47:10 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "ErrorController" not found in /home/janus/www/php-g21/core/Router.php:20
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#1 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#2 {main}
+  thrown in /home/janus/www/php-g21/core/Router.php on line 20
+[20-Feb-2021 11:48:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "ErrorController" not found in /home/janus/www/php-g21/core/Router.php:20
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#1 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#2 {main}
+  thrown in /home/janus/www/php-g21/core/Router.php on line 20
+[20-Feb-2021 11:49:25 Europe/Kiev] PHP Warning:  Undefined variable $errors in /home/janus/www/php-g21/app/Views/errors/index.php on line 3
+[20-Feb-2021 11:49:25 Europe/Kiev] PHP Stack trace:
+[20-Feb-2021 11:49:25 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[20-Feb-2021 11:49:25 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[20-Feb-2021 11:49:25 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[20-Feb-2021 11:49:25 Europe/Kiev] PHP   4. ErrorController->notFound() /home/janus/www/php-g21/core/Router.php:20
+[20-Feb-2021 11:49:25 Europe/Kiev] PHP   5. ErrorController->render($view = 'errors/index', $params = ['title' => '404 Page Not Found', 'message' => 'Something gone wrong!']) /home/janus/www/php-g21/app/Controllers/ErrorController.php:21
+[20-Feb-2021 11:49:25 Europe/Kiev] PHP   6. View->render($view = 'errors/index', $params = ['title' => '404 Page Not Found', 'message' => 'Something gone wrong!']) /home/janus/www/php-g21/core/Controller.php:27
+[20-Feb-2021 11:49:25 Europe/Kiev] PHP   7. include_once() /home/janus/www/php-g21/core/View.php:22
+[20-Feb-2021 12:03:48 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function render() in /home/janus/www/php-g21/app/Controllers/BlogController.php:13
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(44): BlogController->index()
+#1 /home/janus/www/php-g21/core/Router.php(17): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/BlogController.php on line 13
