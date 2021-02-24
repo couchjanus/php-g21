@@ -7,6 +7,7 @@ class Controller {
     public string $layout;
     private View $view;
     public $response;
+    public $request;
 
     /**
      * Constructor
@@ -15,8 +16,9 @@ class Controller {
      * @param Response $response
     */
     
-	public function __construct(string $layout, Response $response = null){
-		$this->response = $response !== null ? $response : new Response();
+	public function __construct(string $layout, Response $response = null, Request $request = null){
+		$this->response = $response ?? new Response();
+        $this->request  = $request ?? new Request();
     	$this->layout = $layout;	
         $this->view = new View($this->layout);
     }
@@ -28,5 +30,11 @@ class Controller {
         $this->response->setContent($rendered);
         $this->response->send();
     }
+
+    public function redirect($location = ""){
+        header('Location: http://' . $_SERVER['HTTP_HOST'] . $location);
+        exit();
+    }
+
 
 }

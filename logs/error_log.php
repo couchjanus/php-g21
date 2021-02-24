@@ -466,3 +466,138 @@ Stack trace:
 #3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
 #4 {main}
   thrown in /home/janus/www/php-g21/app/Controllers/BlogController.php on line 13
+[23-Feb-2021 08:18:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Access to undeclared static property Connection::$config in /home/janus/www/php-g21/core/Connection.php:40
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(17): Connection::connect()
+#1 /home/janus/www/php-g21/core/Router.php(110): CategoryController->index()
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/core/Connection.php on line 40
+[23-Feb-2021 08:23:57 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Model" not found in /home/janus/www/php-g21/app/Models/Category.php:4
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(4): require_once()
+#1 /home/janus/www/php-g21/core/Router.php(97): include_once('...')
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Models/Category.php on line 4
+[23-Feb-2021 08:26:43 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Model" not found in /home/janus/www/php-g21/app/Models/Category.php:4
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(4): require_once()
+#1 /home/janus/www/php-g21/core/Router.php(97): include_once('...')
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Models/Category.php on line 4
+[23-Feb-2021 08:28:12 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Model" not found in /home/janus/www/php-g21/app/Models/Category.php:4
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(4): require_once()
+#1 /home/janus/www/php-g21/core/Router.php(97): include_once('...')
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Models/Category.php on line 4
+[23-Feb-2021 08:29:34 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Model" not found in /home/janus/www/php-g21/app/Models/Category.php:4
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php(4): require_once()
+#1 /home/janus/www/php-g21/core/Router.php(97): include_once('...')
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Models/Category.php on line 4
+[23-Feb-2021 09:14:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::update() in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:53
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): CategoryController->update()
+#1 /home/janus/www/php-g21/core/Router.php(76): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 53
+[23-Feb-2021 09:32:04 Europe/Kiev] PHP Warning:  Undefined array key "status" in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 47
+[23-Feb-2021 09:32:04 Europe/Kiev] PHP Stack trace:
+[23-Feb-2021 09:32:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[23-Feb-2021 09:32:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[23-Feb-2021 09:32:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[23-Feb-2021 09:32:04 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'CategoryController', $action = 'update', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[23-Feb-2021 09:32:04 Europe/Kiev] PHP   5. CategoryController->update([]) /home/janus/www/php-g21/core/Router.php:110
+[23-Feb-2021 10:31:14 Europe/Kiev] PHP Warning:  Undefined property: CategoryController::$view in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 74
+[23-Feb-2021 10:31:14 Europe/Kiev] PHP Stack trace:
+[23-Feb-2021 10:31:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[23-Feb-2021 10:31:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[23-Feb-2021 10:31:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[23-Feb-2021 10:31:14 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'CategoryController', $action = 'delete', $vars = ['id' => '5', 0 => '5']) /home/janus/www/php-g21/core/Router.php:76
+[23-Feb-2021 10:31:14 Europe/Kiev] PHP   5. CategoryController->delete($params = ['id' => '5', 0 => '5']) /home/janus/www/php-g21/core/Router.php:110
+[23-Feb-2021 10:31:14 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function render() on null in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:74
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): CategoryController->delete()
+#1 /home/janus/www/php-g21/core/Router.php(76): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 74
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP Warning:  Undefined variable $title in /home/janus/www/php-g21/app/Views/admin/categories/delete.php on line 11
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP Stack trace:
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'CategoryController', $action = 'delete', $vars = ['id' => '5', 0 => '5']) /home/janus/www/php-g21/core/Router.php:76
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP   5. CategoryController->delete($params = ['id' => '5', 0 => '5']) /home/janus/www/php-g21/core/Router.php:110
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP   6. CategoryController->render($view = 'admin/categories/delete', $params = ['category' => class stdClass { public $id = 5; public $name = 'Shoes'; public $status = 1 }]) /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:72
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP   7. View->render($view = 'admin/categories/delete', $params = ['category' => class stdClass { public $id = 5; public $name = 'Shoes'; public $status = 1 }]) /home/janus/www/php-g21/core/Controller.php:29
+[23-Feb-2021 10:32:11 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[23-Feb-2021 10:34:29 Europe/Kiev] PHP Parse error:  syntax error, unexpected identifier "fa", expecting "]" in /home/janus/www/php-g21/app/Views/admin/categories/delete.php on line 4
+[23-Feb-2021 10:44:17 Europe/Kiev] PHP Warning:  Undefined property: CategoryController::$category in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 64
+[23-Feb-2021 10:44:17 Europe/Kiev] PHP Stack trace:
+[23-Feb-2021 10:44:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[23-Feb-2021 10:44:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[23-Feb-2021 10:44:17 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[23-Feb-2021 10:44:17 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'CategoryController', $action = 'delete', $vars = ['id' => '3', 0 => '3']) /home/janus/www/php-g21/core/Router.php:76
+[23-Feb-2021 10:44:17 Europe/Kiev] PHP   5. CategoryController->delete($params = ['id' => '3', 0 => '3']) /home/janus/www/php-g21/core/Router.php:110
+[23-Feb-2021 10:44:17 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function destroy() on null in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:64
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): CategoryController->delete()
+#1 /home/janus/www/php-g21/core/Router.php(76): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 64
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP Warning:  Attempt to read property "name" on bool in /home/janus/www/php-g21/app/Views/admin/categories/delete.php on line 14
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP Stack trace:
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'CategoryController', $action = 'delete', $vars = ['id' => '6', 0 => '6']) /home/janus/www/php-g21/core/Router.php:76
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP   5. CategoryController->delete($params = ['id' => '6', 0 => '6']) /home/janus/www/php-g21/core/Router.php:110
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP   6. CategoryController->render($view = 'admin/categories/delete', $params = ['category' => FALSE]) /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:73
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP   7. View->render($view = 'admin/categories/delete', $params = ['category' => FALSE]) /home/janus/www/php-g21/core/Controller.php:29
+[23-Feb-2021 10:48:35 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[23-Feb-2021 10:55:34 Europe/Kiev] PHP Parse error:  syntax error, unexpected token "." in /home/janus/www/php-g21/core/Response.php on line 116
+[23-Feb-2021 10:56:01 Europe/Kiev] PHP Warning:  Undefined property: CategoryController::$responce in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 66
+[23-Feb-2021 10:56:01 Europe/Kiev] PHP Stack trace:
+[23-Feb-2021 10:56:01 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[23-Feb-2021 10:56:01 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[23-Feb-2021 10:56:01 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[23-Feb-2021 10:56:01 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'CategoryController', $action = 'delete', $vars = ['id' => '4', 0 => '4']) /home/janus/www/php-g21/core/Router.php:76
+[23-Feb-2021 10:56:01 Europe/Kiev] PHP   5. CategoryController->delete($params = ['id' => '4', 0 => '4']) /home/janus/www/php-g21/core/Router.php:110
+[23-Feb-2021 10:56:01 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function redirect() on null in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php:66
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): CategoryController->delete()
+#1 /home/janus/www/php-g21/core/Router.php(76): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/CategoryController.php on line 66
+[23-Feb-2021 11:04:08 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function render() in /home/janus/www/php-g21/app/Controllers/BlogController.php:13
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): BlogController->index()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/BlogController.php on line 13

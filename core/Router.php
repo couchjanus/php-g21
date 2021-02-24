@@ -1,6 +1,6 @@
 <?php
 require_once ROOT."/core/Request.php";
-
+// 
 class Router0
 {
     protected $routes = ROUTES;
@@ -82,7 +82,7 @@ class Router
 
     private function getController(string $path):array {
         $segments = explode('\\', $path);
-        list($controller, $action)=explode('@', array_pop($segments));
+        [$controller, $action] = explode('@', array_pop($segments));
         $prefix = DIRECTORY_SEPARATOR;
         foreach ($segments as $segment) {
             $prefix .= $segment.DIRECTORY_SEPARATOR;

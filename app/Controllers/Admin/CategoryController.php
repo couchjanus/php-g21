@@ -1,6 +1,6 @@
 <?php
-require_once ROOT."/core/Connection.php";
 require_once ROOT."/core/Controller.php";
+require_once MODELS."/Category.php";
 
 class CategoryController extends Controller
 {
@@ -9,15 +9,10 @@ class CategoryController extends Controller
     {
         parent::__construct('admin');
     }
-
     
     public function index()
     {
-    	$db = new Connection();
-		$sql = "SELECT * FROM categories";
-		$stmt = $db->pdo->prepare($sql);
-		$stmt->execute();
-		$categories = $stmt->fetchAll();
+        $categories = (new Category())->all();
         $this->render('admin/categories/index', ['categories'=>$categories]);
     }
 
@@ -28,32 +23,46 @@ class CategoryController extends Controller
 
     public function store()
     {
-    	$db = new Connection();
-    	$status = $_POST['status'] ? 1:0; 
-		$data = [$_POST['name'],  $status];
-		$sql = "INSERT INTO categories(name, status) VALUES(?, ?)";
-		$stmt = $db->pdo->prepare($sql);
-
-		if($stmt->execute($data)){
-	    	$redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';
-	        header("Location: $redirect");
-    	}
+        $status = $this->request->data['status'] ? 1:0;
+        (new Category())->save(
+            [
+                'name'=>$this->request->data['name'], 
+                'status'=>$status, 
+            ]);
+        $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';
+        header("Location: $redirect");
     }
 
-    public function getByPrimaryKey($id) {
-        $db = new Connection();
-        $stmt = $db->pdo->prepare("SELECT * FROM categories WHERE id = ?");
-        $stmt->execute([$id]);
-        return $stmt->fetch(PDO::FETCH_OBJ);
-   }
-
-
+   
     public function edit($params){
-        var_dump($params);
+        extract($params);
+        $category = (new Category())->getByPK($id);
+        $this->render('admin/categories/edit', compact('category'));
     }
+
+    public function update()
+    {
+        $status = $this->request->data['status'] ? 1:0;
+        (new Category())->update($this->request->data['id'], 
+            [
+                'name'=>$this->request->data['name'], 
+                'status'=>$status, 
+            ]);
+
+        $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';
+        header("Location: $redirect");
+    }
+
 
     public function delete($params){
-        var_dump($params);
+        extract($params);
+        if (isset($this->request->data['submit'])) {
+            (new Category())->destroy($id);
+            $this->redirect('/admin/categories');
+        } elseif (isset($this->request->data['reset'])) {
+            $this->redirect('/admin/categories');
+        }
+        $category = (new Category())->getByPK($id);
+        $this->render('admin/categories/delete', compact('category'));
     }
-
 }

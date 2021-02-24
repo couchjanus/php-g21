@@ -5,22 +5,39 @@
 
 class Connection
 {
-    public $pdo;
-    protected $config = [];
+    // public $pdo;
+    protected static $config = [];
+    protected static $instance;
 
-    public function __construct()  {
-        $this->config = require_once DB_CONFIG_FILE;
-       
-       $dsn = $this->makeDsn($this->config['db']);
-
-       try {
-           $this->pdo = new PDO($dsn,  $this->config['user'], $this->config['password'], $this->config['options']);
-       } catch (PDOException $e) {
-           throw new PDOException($e->getMessage(), (int)$e->getCode());
-       }
+    protected function __construct()  
+    {
     }
 
-    private function makeDsn($config)
+    /**
+     * Private clone method to prevent cloning of the instance of the
+     * *Singleton* instance.
+     *
+     * @return void
+     */
+    private function __clone()
+    {
+    }
+
+    /**
+     * Get instance of the PDO
+     * @return PDO
+     */
+    public static function connect()
+    {
+        self::$config = require_once DB_CONFIG_FILE;
+        if(!self::$instance){
+            $dsn = self::makeDsn(self::$config['db']);
+            self::$instance = new PDO($dsn, self::$config['user'], self::$config['password'], self::$config['options']);
+        }
+        return self::$instance;
+    }
+
+    private static function makeDsn($config)
     {
         $dsn = $config['driver'] . ':';
         unset($config['driver']);

@@ -1,15 +1,16 @@
 <?php
 
+require_once ROOT."/core/Controller.php";
 
-class BlogController
+class BlogController extends Controller
 {
-//    public function __construct()
-//    {
-//        render('blog/index', ['title' => 'Blog Page']);
-//    }
+   public function __construct()
+   {
+        parent::__construct('app');
+   }
 
     public function index()
     {
-        render('blog/index', ['title' => 'Blog Page']);
+        $this->render('blog/index', ['title' => 'Blog Page']);
     }
 }
