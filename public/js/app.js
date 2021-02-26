@@ -307,8 +307,9 @@ function saveStorageItem(key, item) {
     localStorage.setItem(key, JSON.stringify(item));
 }
 function fetchData(dataBase) {
-    const baseUrl = `https://my-json-server.typicode.com/couchjanus/db/${dataBase}`;
-
+    // const baseUrl = `https://my-json-server.typicode.com/couchjanus/db/${dataBase}`;
+    const baseUrl = `http://localhost:8000/api/${dataBase}`;
+    
     fetch(baseUrl)
         .then((response) => {
             if (response.status !== 200) {
@@ -331,20 +332,6 @@ document.addEventListener("DOMContentLoaded", function(){
     // saveProducts(products);
     fetchData("products");
     
-    // let array = getProducts();
-    // const key = 'category';
-
-    // const arrayUniqueByKey = [...new Map(getProducts().map(item =>
-    // [item['category'], item])).values()];
-
-    // console.log(arrayUniqueByKey);
-    // const categories = arrayUniqueByKey.map(item => (
-    //     { 
-    //         name: item.category,
-    //         image: item.image
-    //     }
-    // ));
-    
     const categories = [...new Map(getProducts().map(item =>
         [item['category'], item])).values()].map(item => (
         { 
@@ -352,7 +339,7 @@ document.addEventListener("DOMContentLoaded", function(){
             image: item.image
         }
     ));
-    console.log(categories);
+    // console.log(categories);
     
     document.body.style.setProperty( "--categories-length", categories.length );
     makeCarousel(categories);

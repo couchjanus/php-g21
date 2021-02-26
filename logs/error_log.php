@@ -601,3 +601,159 @@ Stack trace:
 #3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
 #4 {main}
   thrown in /home/janus/www/php-g21/app/Controllers/BlogController.php on line 13
+[25-Feb-2021 12:47:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Category" not found in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php:15
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): ProductController->index()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 15
+[25-Feb-2021 17:18:13 Europe/Kiev] PHP Parse error:  syntax error, unexpected token "public" in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 113
+[25-Feb-2021 17:18:58 Europe/Kiev] PHP Parse error:  syntax error, unexpected token "public" in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 153
+[25-Feb-2021 17:19:52 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function uploadImage() in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php:35
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): ProductController->store()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 35
+[25-Feb-2021 17:25:21 Europe/Kiev] PHP Parse error:  Unclosed '{' on line 107 does not match ')' in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 108
+[25-Feb-2021 19:20:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of class ErrorController could not be converted to string in /home/janus/www/php-g21/core/Router.php:102
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(79): Router->init()
+#1 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#2 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#3 {main}
+  thrown in /home/janus/www/php-g21/core/Router.php on line 102
+[25-Feb-2021 19:21:18 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g21/app/Models/Brand.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/app/Controllers/Admin/BrandController.php on line 3
+[25-Feb-2021 19:21:18 Europe/Kiev] PHP Stack trace:
+[25-Feb-2021 19:21:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[25-Feb-2021 19:21:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[25-Feb-2021 19:21:18 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[25-Feb-2021 19:21:18 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'BrandController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[25-Feb-2021 19:21:18 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g21/core/Router.php:97
+[25-Feb-2021 19:21:18 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/home/janus/www/php-g21/app/Models/Brand.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/app/Controllers/Admin/BrandController.php:3
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(97): include_once()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/BrandController.php on line 3
+[25-Feb-2021 19:21:56 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g21/app/Models/Brand.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/app/Controllers/Admin/BrandController.php on line 4
+[25-Feb-2021 19:21:56 Europe/Kiev] PHP Stack trace:
+[25-Feb-2021 19:21:56 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[25-Feb-2021 19:21:56 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[25-Feb-2021 19:21:56 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[25-Feb-2021 19:21:56 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'BrandController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[25-Feb-2021 19:21:56 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g21/core/Router.php:97
+[25-Feb-2021 19:21:56 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/home/janus/www/php-g21/app/Models/Brand.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/app/Controllers/Admin/BrandController.php:4
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(97): include_once()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/BrandController.php on line 4
+[25-Feb-2021 19:38:54 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g21/app/Models/Btand.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 5
+[25-Feb-2021 19:38:54 Europe/Kiev] PHP Stack trace:
+[25-Feb-2021 19:38:54 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[25-Feb-2021 19:38:54 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[25-Feb-2021 19:38:54 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[25-Feb-2021 19:38:54 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'ProductController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[25-Feb-2021 19:38:54 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g21/core/Router.php:97
+[25-Feb-2021 19:38:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/home/janus/www/php-g21/app/Models/Btand.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php:5
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(97): include_once()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 5
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP Warning:  Undefined variable $products in /home/janus/www/php-g21/app/Views/admin/products/index.php on line 8
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP Stack trace:
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'ProductController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP   5. ProductController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP   6. ProductController->render($view = 'admin/products/index', $params = ['categories' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }]]) /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php:18
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP   7. View->render($view = 'admin/products/index', $params = ['categories' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }]]) /home/janus/www/php-g21/core/Controller.php:29
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[26-Feb-2021 08:19:24 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, null given in /home/janus/www/php-g21/app/Views/admin/products/index.php:8
+Stack trace:
+#0 /home/janus/www/php-g21/core/View.php(22): include_once()
+#1 /home/janus/www/php-g21/core/Controller.php(29): View->render()
+#2 /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php(18): Controller->render()
+#3 /home/janus/www/php-g21/core/Router.php(110): ProductController->index()
+#4 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#5 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#6 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#7 {main}
+  thrown in /home/janus/www/php-g21/app/Views/admin/products/index.php on line 8
+[26-Feb-2021 08:21:27 Europe/Kiev] PHP Warning:  Undefined array key "price" in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 46
+[26-Feb-2021 08:21:27 Europe/Kiev] PHP Stack trace:
+[26-Feb-2021 08:21:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[26-Feb-2021 08:21:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[26-Feb-2021 08:21:27 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[26-Feb-2021 08:21:27 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'ProductController', $action = 'store', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[26-Feb-2021 08:21:27 Europe/Kiev] PHP   5. ProductController->store([]) /home/janus/www/php-g21/core/Router.php:110
+[26-Feb-2021 08:21:27 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null in /home/janus/www/php-g21/core/Model.php:39
+Stack trace:
+#0 /home/janus/www/php-g21/core/Model.php(39): PDOStatement->execute()
+#1 /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php(47): Model->save()
+#2 /home/janus/www/php-g21/core/Router.php(110): ProductController->store()
+#3 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#4 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/core/Model.php on line 39
+[26-Feb-2021 08:26:35 Europe/Kiev] PHP Notice:  Only variables should be passed by reference in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 131
+[26-Feb-2021 08:26:35 Europe/Kiev] PHP Stack trace:
+[26-Feb-2021 08:26:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[26-Feb-2021 08:26:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[26-Feb-2021 08:26:35 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[26-Feb-2021 08:26:35 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'ProductController', $action = 'delete', $vars = ['id' => '1', 0 => '1']) /home/janus/www/php-g21/core/Router.php:76
+[26-Feb-2021 08:26:35 Europe/Kiev] PHP   5. ProductController->delete($params = ['id' => '1', 0 => '1']) /home/janus/www/php-g21/core/Router.php:110
+[26-Feb-2021 09:23:49 Europe/Kiev] PHP Warning:  Undefined property: ProductController::$redirector in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 119
+[26-Feb-2021 09:23:49 Europe/Kiev] PHP Stack trace:
+[26-Feb-2021 09:23:49 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[26-Feb-2021 09:23:49 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[26-Feb-2021 09:23:49 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[26-Feb-2021 09:23:49 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'ProductController', $action = 'update', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[26-Feb-2021 09:23:49 Europe/Kiev] PHP   5. ProductController->update([]) /home/janus/www/php-g21/core/Router.php:110
+[26-Feb-2021 09:23:49 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function redirect() on null in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php:119
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): ProductController->update()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 119
+[26-Feb-2021 09:25:45 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php:68
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php(104): ProductController->uploadImage()
+#1 /home/janus/www/php-g21/core/Router.php(110): ProductController->update()
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 68
+[26-Feb-2021 09:34:28 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php:72
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php(102): ProductController->uploadImage()
+#1 /home/janus/www/php-g21/core/Router.php(110): ProductController->update()
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 72
+[26-Feb-2021 09:43:30 Europe/Kiev] PHP Warning:  Undefined array key "is_new" in /home/janus/www/php-g21/app/Controllers/Admin/ProductController.php on line 31
+[26-Feb-2021 09:43:30 Europe/Kiev] PHP Stack trace:
+[26-Feb-2021 09:43:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[26-Feb-2021 09:43:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[26-Feb-2021 09:43:30 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[26-Feb-2021 09:43:30 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'ProductController', $action = 'store', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[26-Feb-2021 09:43:30 Europe/Kiev] PHP   5. ProductController->store([]) /home/janus/www/php-g21/core/Router.php:110

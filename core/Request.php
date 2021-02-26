@@ -4,12 +4,12 @@ class Request
 	public $data = [];
    
     public function __construct() {
-        $this->data = $this->prepareData($_REQUEST); 
+        $this->data = $this->prepareData($_REQUEST, $_FILES); 
     }
     
-    private function prepareData(array $post){
+    private function prepareData(array $post, array $files){
         $post = $this->cleanInput($post);
-        return $post;
+        return array_merge($files, $post);
     }
 
     private function cleanInput($data) {
