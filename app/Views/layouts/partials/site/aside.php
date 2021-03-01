@@ -14,8 +14,17 @@
         <!-- buttons -->
         <div class="cart-footer">
             <h3>Your total : $<span class="cart-total">0</span></h3>
-            <button class="clear-cart">Clear Cart</button>
+            
+            <div class="btn-group" role="group">
+                <button type="button" class="clear-cart btn btn-danger">Clear Cart</button>
+                <?php if(isGuest()):?>
+                <a href="/#login"><button type="button" class="btn btn-warning">You should log in</button></a>
+                <?php else:?>
+                <button type="button" class="checkout__now btn btn-success">Chackout</button>
+                <?php endif?>
+            </div>
         </div>
+
     </div>
 </aside>
 <!-- ./aside -->

@@ -1,28 +1,23 @@
 <?php
 require_once ROOT."/core/View.php";
-require_once ROOT."/core/Response.php";
+require_once ROOT."/core/BaseController.php";
 
-class Controller {
+class Controller extends BaseController
+{
 
-    public string $layout;
+    protected static string $layout = '';
+    
     private View $view;
-    public $response;
-    public $request;
 
     /**
      * Constructor
-     *
-     * @param Request  $request
-     * @param Response $response
     */
-    
-	public function __construct(string $layout, Response $response = null, Request $request = null){
-		$this->response = $response ?? new Response();
-        $this->request  = $request ?? new Request();
-    	$this->layout = $layout;	
-        $this->view = new View($this->layout);
+    public function __construct()
+    {
+        parent::__construct();
+        $this->view = new View(static::$layout);
     }
-
+	
 
     public function render($view, $params = [])
     {
@@ -30,11 +25,5 @@ class Controller {
         $this->response->setContent($rendered);
         $this->response->send();
     }
-
-    public function redirect($location = ""){
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . $location);
-        exit();
-    }
-
-
+  
 }

@@ -4,10 +4,11 @@ require_once MODELS."/Category.php";
 
 class CategoryController extends Controller
 {
+    protected static string $layout = 'admin';
     
     public function __construct()
     {
-        parent::__construct('admin');
+        parent::__construct();
     }
     
     public function index()
@@ -29,6 +30,7 @@ class CategoryController extends Controller
                 'name'=>$this->request->data['name'], 
                 'status'=>$status, 
             ]);
+        $this->session()->setFlash('success', 'Category created successfully!');
         $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';
         header("Location: $redirect");
     }

@@ -51,39 +51,80 @@
 
 <!-- modal -->
 
-<div id="openModal" class="modal">
+<div id="login" class="modal">
     <div class="dialog">
-        <a href="#close" title="Close" class="close">X</a>
-
+        <a href="#close" title="Close" class="close">&times;</a>
         <div class="col-left">
-            <div class="login-text">
-                <h2>Welcome Back</h2>
-                <p>Create your account.<br>It's totally free.</p>
-                <a class="btn" href="">Sign Up</a>
-            </div>
+                <div class="login-text">
+                    <h3>Not a member?</h3>
+                    <p>Create your account.<br>It's totally free.</p>
+                    <a class="btn" href="#register">Sign Up</a>
+                </div>
         </div>
 
         <div class="col-right">
             <div class="login-form">
                 <h2>Login</h2>
-                <form>
-                    <p>
-                        <label>Username or email address<span>*</span></label>
-                        <input type="text" placeholder="Username or Email" required>
-                    </p>
-                    <p>
-                        <label>Password<span>*</span></label>
-                        <input type="password" placeholder="Password" required>
-                    </p>
-                    <p>
-                        <input type="submit" value="Sing In" />
-                    </p>
-                    <p>
-                        <a href="">Forget Password?</a>
-                    </p>
+                <form method="POST" action="/login">
+                        <p>
+                            <label>User email address<span>*</span></label>
+                            <input type="email" name="email" placeholder="User Email" required>
+                        </p>
+                        <p>
+                            <label>Password<span>*</span></label>
+                            <input type="password" placeholder="Password" name="password" required>
+                        </p>
+                        <p>
+                            <input type="submit" value="Sing In" />
+                        </p>
+                        <p>
+                            <a href="">Forget Password?</a>
+                            
+                        </p>
+                       
                 </form>
             </div>
         </div>
-
     </div>
 </div>
+
+
+<div id="register" class="modal">
+    <div class="dialog">
+        <a href="#close" title="Close" class="close">&times;</a>
+        <div class="col-left">
+                <div class="login-text">
+                    <h3>Already member?</h3>
+                    
+                    <a class="btn" href="#login">Sign In</a>
+                </div>
+        </div>
+
+        <div class="col-right">
+            <div class="login-form">
+                <h2>Sign Up</h2>
+                <form method="POST" action="/register">
+                        <p>
+                            <label>User email address<span>*</span></label>
+                            <input type="email" name="email" placeholder="User Email" required>
+                        </p>
+                        <p>
+                            <label>Password<span>*</span></label>
+                            <input type="password" placeholder="Password" name="password" required>
+                        </p>
+
+                        <p>
+                            <label>Confirm Password<span>*</span></label>
+                            <input type="password" placeholder="Retype password again" name="confirmpassword" required>
+                        </p>
+
+                        <p>
+                            <input type="submit" value="Sing Up" />
+                        </p>
+                       
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+  

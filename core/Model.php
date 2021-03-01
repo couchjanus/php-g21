@@ -67,4 +67,10 @@ class Model
         return $stmt->fetchAll();
     }
 
+    public  function getWhere($sql){
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetch();
+    }
+
 }

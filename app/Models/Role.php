@@ -1,14 +1,12 @@
 <?php
 /**
- * class User
+ * class Role
  */
 
 require_once ROOT."/core/Model.php";
 
-class User extends Model
+class Role extends Model
 {
-    protected static $table = 'users';
+    protected static $table = 'roles';
     protected static $pk = 'id';
-
-   
 }

@@ -1,9 +1,10 @@
 <?php
+
 /**
  * class Connection
  */
 
-class Connection
+class Connection 
 {
     // public $pdo;
     protected static $config = [];

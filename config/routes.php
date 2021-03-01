@@ -31,12 +31,35 @@ return [
     'admin/products/edit/{id}' => 'Admin\ProductController@edit',
     'admin/products/update' => 'Admin\ProductController@update',
     'admin/products/delete/{id}' => 'Admin\ProductController@delete',
-    
-   // 'api/products' => 'HomeController@getProducts',
+
+    "admin/roles" => "Admin\RoleController@index",
+    "admin/roles/create" => "Admin\RoleController@create",
+    "admin/roles/store" => "Admin\RoleController@store",
+    'admin/roles/show/{id}' => 'Admin\RoleController@show',
+    'admin/roles/edit/{id}' => 'Admin\RoleController@edit',
+    'admin/roles/update' => 'Admin\RoleController@update',
+    'admin/roles/delete/{id}' => 'Admin\RoleController@delete',
+       
+    "admin/users" => "Admin\UserController@index",
+    "admin/users/create" => "Admin\UserController@create",
+    "admin/users/store" => "Admin\UserController@store",
+    'admin/users/show/{id}' => 'Admin\UserController@show',
+    'admin/users/edit/{id}' => 'Admin\UserController@edit',
+    'admin/users/update' => 'Admin\UserController@update',
+    'admin/users/delete/{id}' => 'Admin\UserController@delete',
+   
+   
    'api/products' => 'HomeController@getProductsWithCategory',
    'api/products/{id}' => 'HomeController@getProduct',
    
    'api/categories'=> 'HomeController@getCategories',
    'api/categories/count'=> 'HomeController@getCategoriesWithCount',
+
+   'api/cart' => 'OrderController@cart',
+
+   'register' => 'RegisterController@signup',
+   'login' => 'LoginController@signin',
+   'logout' => 'LoginController@logout',
+   'profile' => 'ProfileController@index',
 
 ];

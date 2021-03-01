@@ -7,9 +7,11 @@ require_once MODELS.'/Product.php';
     
 class HomeController extends Controller
 {
-	public function __construct()
+    protected static string $layout = 'app';
+	
+    public function __construct()
     {
-        parent::__construct('app');
+        parent::__construct();
     }
 
     public function index()

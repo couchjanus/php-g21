@@ -6,10 +6,10 @@ require_once MODELS."/Brand.php";
 
 class ProductController extends Controller
 {
-    
+    protected static string $layout = 'admin';
     public function __construct()
     {
-        parent::__construct('admin');
+        parent::__construct();
     }
     
     public function index()

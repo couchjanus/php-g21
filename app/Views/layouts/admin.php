@@ -39,6 +39,7 @@
     <!--sidebar-->
         <?php require_once VIEWS.'/layouts/partials/admin/sidebar.php'; ?>
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <?php require_once VIEWS.'/layouts/partials/_flash-message.php'; ?>
             {{content}}
         </main>
     </div>

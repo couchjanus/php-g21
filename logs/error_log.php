@@ -757,3 +757,362 @@ Stack trace:
 [26-Feb-2021 09:43:30 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
 [26-Feb-2021 09:43:30 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'ProductController', $action = 'store', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
 [26-Feb-2021 09:43:30 Europe/Kiev] PHP   5. ProductController->store([]) /home/janus/www/php-g21/core/Router.php:110
+[27-Feb-2021 15:20:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Undefined constant "CORE" in /home/janus/www/php-g21/app/Controllers/Admin/UserController.php:6
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(97): include_once()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/Admin/UserController.php on line 6
+[27-Feb-2021 15:21:36 Europe/Kiev] PHP Warning:  require_once(/core/Model.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/app/Models/User.php on line 5
+[27-Feb-2021 15:21:36 Europe/Kiev] PHP Stack trace:
+[27-Feb-2021 15:21:36 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[27-Feb-2021 15:21:36 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[27-Feb-2021 15:21:36 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[27-Feb-2021 15:21:36 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'UserController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[27-Feb-2021 15:21:36 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g21/core/Router.php:97
+[27-Feb-2021 15:21:36 Europe/Kiev] PHP   6. require_once() /home/janus/www/php-g21/app/Controllers/Admin/UserController.php:8
+[27-Feb-2021 15:21:36 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/core/Model.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/app/Models/User.php:5
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/UserController.php(8): require_once()
+#1 /home/janus/www/php-g21/core/Router.php(97): include_once('...')
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Models/User.php on line 5
+[27-Feb-2021 15:22:06 Europe/Kiev] PHP Warning:  require_once(/core/Model.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/app/Models/User.php on line 6
+[27-Feb-2021 15:22:06 Europe/Kiev] PHP Stack trace:
+[27-Feb-2021 15:22:06 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[27-Feb-2021 15:22:06 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[27-Feb-2021 15:22:06 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[27-Feb-2021 15:22:06 Europe/Kiev] PHP   4. Router->init($controllerPath = '/Admin/', $controller = 'UserController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[27-Feb-2021 15:22:06 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g21/core/Router.php:97
+[27-Feb-2021 15:22:06 Europe/Kiev] PHP   6. require_once() /home/janus/www/php-g21/app/Controllers/Admin/UserController.php:8
+[27-Feb-2021 15:22:06 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/core/Model.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/app/Models/User.php:6
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/UserController.php(8): require_once()
+#1 /home/janus/www/php-g21/core/Router.php(97): include_once('...')
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Models/User.php on line 6
+[27-Feb-2021 19:49:51 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Controller::__construct(), 0 passed in /home/janus/www/php-g21/core/Router.php on line 98 and at least 1 expected in /home/janus/www/php-g21/core/Controller.php:19
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(98): Controller->__construct()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/core/Controller.php on line 19
+[27-Feb-2021 19:54:19 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property Controller::$layout of type string in /home/janus/www/php-g21/core/Controller.php:22
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(98): Controller->__construct()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/core/Controller.php on line 22
+[27-Feb-2021 20:09:54 Europe/Kiev] PHP Parse error:  syntax error, unexpected token "}" in /home/janus/www/php-g21/app/Controllers/LoginController.php on line 62
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP Warning:  Undefined property: LoginController::$logged_in in /home/janus/www/php-g21/app/Controllers/LoginController.php on line 52
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP Stack trace:
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'LoginController', $action = 'signin', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   5. LoginController->signin([]) /home/janus/www/php-g21/core/Router.php:110
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP Warning:  Attempt to read property "password" on array in /home/janus/www/php-g21/app/Controllers/LoginController.php on line 37
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP Stack trace:
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'LoginController', $action = 'signin', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   5. LoginController->signin([]) /home/janus/www/php-g21/core/Router.php:110
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   6. LoginController->checkUser($email = 'dog@my.cat', $password = 'ghbdtn') /home/janus/www/php-g21/app/Controllers/LoginController.php:55
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/janus/www/php-g21/app/Controllers/LoginController.php:37) in /home/janus/www/php-g21/core/Controller.php on line 35
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP Stack trace:
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'LoginController', $action = 'signin', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   5. LoginController->signin([]) /home/janus/www/php-g21/core/Router.php:110
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   6. LoginController->redirect($location = '/#login') /home/janus/www/php-g21/app/Controllers/LoginController.php:60
+[27-Feb-2021 20:10:41 Europe/Kiev] PHP   7. header($header = 'Location: http://localhost:8000/#login') /home/janus/www/php-g21/core/Controller.php:35
+[27-Feb-2021 20:12:24 Europe/Kiev] PHP Warning:  Attempt to read property "password" on array in /home/janus/www/php-g21/app/Controllers/LoginController.php on line 38
+[27-Feb-2021 20:12:24 Europe/Kiev] PHP Stack trace:
+[27-Feb-2021 20:12:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[27-Feb-2021 20:12:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[27-Feb-2021 20:12:24 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[27-Feb-2021 20:12:24 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'LoginController', $action = 'signin', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[27-Feb-2021 20:12:24 Europe/Kiev] PHP   5. LoginController->signin([]) /home/janus/www/php-g21/core/Router.php:110
+[27-Feb-2021 20:12:24 Europe/Kiev] PHP   6. LoginController->checkUser($email = 'dog@my.cat', $password = 'ghbdtn') /home/janus/www/php-g21/app/Controllers/LoginController.php:56
+[27-Feb-2021 20:12:38 Europe/Kiev] PHP Warning:  Attempt to read property "password" on array in /home/janus/www/php-g21/app/Controllers/LoginController.php on line 38
+[27-Feb-2021 20:12:38 Europe/Kiev] PHP Stack trace:
+[27-Feb-2021 20:12:38 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[27-Feb-2021 20:12:38 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[27-Feb-2021 20:12:38 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[27-Feb-2021 20:12:38 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'LoginController', $action = 'signin', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[27-Feb-2021 20:12:38 Europe/Kiev] PHP   5. LoginController->signin([]) /home/janus/www/php-g21/core/Router.php:110
+[27-Feb-2021 20:12:38 Europe/Kiev] PHP   6. LoginController->checkUser($email = 'dog@my.cat', $password = 'ghbdtn') /home/janus/www/php-g21/app/Controllers/LoginController.php:56
+[27-Feb-2021 20:14:23 Europe/Kiev] PHP Warning:  Attempt to read property "password" on array in /home/janus/www/php-g21/app/Controllers/LoginController.php on line 38
+[27-Feb-2021 20:14:23 Europe/Kiev] PHP Stack trace:
+[27-Feb-2021 20:14:23 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[27-Feb-2021 20:14:23 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[27-Feb-2021 20:14:23 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[27-Feb-2021 20:14:23 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'LoginController', $action = 'signin', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[27-Feb-2021 20:14:23 Europe/Kiev] PHP   5. LoginController->signin([]) /home/janus/www/php-g21/core/Router.php:110
+[27-Feb-2021 20:14:23 Europe/Kiev] PHP   6. LoginController->checkUser($email = 'dog@my.cat', $password = 'ghbdtn') /home/janus/www/php-g21/app/Controllers/LoginController.php:56
+[27-Feb-2021 20:15:48 Europe/Kiev] PHP Warning:  Attempt to read property "password" on array in /home/janus/www/php-g21/app/Controllers/LoginController.php on line 38
+[27-Feb-2021 20:15:48 Europe/Kiev] PHP Stack trace:
+[27-Feb-2021 20:15:48 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[27-Feb-2021 20:15:48 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[27-Feb-2021 20:15:48 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[27-Feb-2021 20:15:48 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'LoginController', $action = 'signin', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[27-Feb-2021 20:15:48 Europe/Kiev] PHP   5. LoginController->signin([]) /home/janus/www/php-g21/core/Router.php:110
+[27-Feb-2021 20:15:48 Europe/Kiev] PHP   6. LoginController->checkUser($email = 'dog@my.cat', $password = 'ghbdtn') /home/janus/www/php-g21/app/Controllers/LoginController.php:56
+[28-Feb-2021 10:33:25 Europe/Kiev] PHP Warning:  Undefined variable $_SESSION in /home/janus/www/php-g21/core/Session.php on line 46
+[28-Feb-2021 10:33:25 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 10:33:25 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 10:33:25 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 10:33:25 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[28-Feb-2021 10:33:25 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 10:33:25 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 10:33:25 Europe/Kiev] PHP   6. Session::display() /home/janus/www/php-g21/app/Controllers/ProfileController.php:27
+[28-Feb-2021 10:54:09 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Cannot assign bool to property Session::$messages of type array in /home/janus/www/php-g21/core/Session.php:21
+Stack trace:
+#0 /home/janus/www/php-g21/core/Session.php(29): Session->__construct()
+#1 /home/janus/www/php-g21/app/Controllers/ProfileController.php(27): Session::instance()
+#2 /home/janus/www/php-g21/core/Router.php(110): ProfileController->index()
+#3 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#4 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/core/Session.php on line 21
+[28-Feb-2021 10:54:45 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Cannot assign bool to property Session::$messages of type array in /home/janus/www/php-g21/core/Session.php:21
+Stack trace:
+#0 /home/janus/www/php-g21/core/Session.php(29): Session->__construct()
+#1 /home/janus/www/php-g21/app/Controllers/ProfileController.php(27): Session::instance()
+#2 /home/janus/www/php-g21/core/Router.php(110): ProfileController->index()
+#3 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#4 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/core/Session.php on line 21
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP Warning:  Undefined array key "flash_messages" in /home/janus/www/php-g21/core/Session.php on line 21
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:53
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP   6. Session::instance() /home/janus/www/php-g21/app/Controllers/ProfileController.php:27
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP   7. Session->__construct() /home/janus/www/php-g21/core/Session.php:29
+[28-Feb-2021 10:56:16 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property Session::$messages of type array in /home/janus/www/php-g21/core/Session.php:21
+Stack trace:
+#0 /home/janus/www/php-g21/core/Session.php(29): Session->__construct()
+#1 /home/janus/www/php-g21/app/Controllers/ProfileController.php(27): Session::instance()
+#2 /home/janus/www/php-g21/core/Router.php(110): ProfileController->index()
+#3 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#4 /home/janus/www/php-g21/bootstrap/app.php(53): Router->run()
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/core/Session.php on line 21
+[28-Feb-2021 14:20:26 Europe/Kiev] PHP Warning:  Undefined array key "success" in /home/janus/www/php-g21/core/Session.php on line 78
+[28-Feb-2021 14:20:26 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 14:20:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 14:20:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 14:20:26 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:61
+[28-Feb-2021 14:20:26 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 14:20:26 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 14:20:26 Europe/Kiev] PHP   6. Session->message() /home/janus/www/php-g21/app/Controllers/ProfileController.php:34
+[28-Feb-2021 14:21:11 Europe/Kiev] PHP Warning:  Undefined array key "flash" in /home/janus/www/php-g21/core/Session.php on line 73
+[28-Feb-2021 14:21:11 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 14:21:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 14:21:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 14:21:11 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:61
+[28-Feb-2021 14:21:11 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 14:21:11 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 14:21:11 Europe/Kiev] PHP   6. Session->flash() /home/janus/www/php-g21/app/Controllers/ProfileController.php:32
+[28-Feb-2021 14:21:11 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, null given in /home/janus/www/php-g21/core/Session.php:73
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/ProfileController.php(32): Session->flash()
+#1 /home/janus/www/php-g21/core/Router.php(110): ProfileController->index()
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(61): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/core/Session.php on line 73
+[28-Feb-2021 14:22:04 Europe/Kiev] PHP Warning:  Undefined array key "flash" in /home/janus/www/php-g21/core/Session.php on line 73
+[28-Feb-2021 14:22:04 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 14:22:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 14:22:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 14:22:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:61
+[28-Feb-2021 14:22:04 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 14:22:04 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 14:22:04 Europe/Kiev] PHP   6. Session->flash() /home/janus/www/php-g21/app/Controllers/ProfileController.php:32
+[28-Feb-2021 14:22:04 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, null given in /home/janus/www/php-g21/core/Session.php:73
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/ProfileController.php(32): Session->flash()
+#1 /home/janus/www/php-g21/core/Router.php(110): ProfileController->index()
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(61): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/core/Session.php on line 73
+[28-Feb-2021 14:23:35 Europe/Kiev] PHP Warning:  Undefined array key "success" in /home/janus/www/php-g21/core/Session.php on line 79
+[28-Feb-2021 14:23:35 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 14:23:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 14:23:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 14:23:35 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:61
+[28-Feb-2021 14:23:35 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 14:23:35 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 14:23:35 Europe/Kiev] PHP   6. Session->message() /home/janus/www/php-g21/app/Controllers/ProfileController.php:34
+[28-Feb-2021 14:29:36 Europe/Kiev] PHP Warning:  Undefined array key "flash" in /home/janus/www/php-g21/core/Session.php on line 73
+[28-Feb-2021 14:29:36 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 14:29:36 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 14:29:36 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 14:29:36 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:61
+[28-Feb-2021 14:29:36 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 14:29:36 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 14:29:36 Europe/Kiev] PHP   6. Session->flash() /home/janus/www/php-g21/app/Controllers/ProfileController.php:32
+[28-Feb-2021 14:29:36 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, null given in /home/janus/www/php-g21/core/Session.php:73
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/ProfileController.php(32): Session->flash()
+#1 /home/janus/www/php-g21/core/Router.php(110): ProfileController->index()
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(61): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/core/Session.php on line 73
+[28-Feb-2021 14:30:16 Europe/Kiev] PHP Warning:  Undefined array key "flash" in /home/janus/www/php-g21/core/Session.php on line 73
+[28-Feb-2021 14:30:16 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 14:30:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 14:30:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 14:30:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:61
+[28-Feb-2021 14:30:16 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 14:30:16 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 14:30:16 Europe/Kiev] PHP   6. Session->flash() /home/janus/www/php-g21/app/Controllers/ProfileController.php:32
+[28-Feb-2021 14:30:16 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($var) must be of type Countable|array, null given in /home/janus/www/php-g21/core/Session.php:73
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/ProfileController.php(32): Session->flash()
+#1 /home/janus/www/php-g21/core/Router.php(110): ProfileController->index()
+#2 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#3 /home/janus/www/php-g21/bootstrap/app.php(61): Router->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/core/Session.php on line 73
+[28-Feb-2021 14:52:19 Europe/Kiev] PHP Warning:  Undefined property: ProfileController::$user in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 45
+[28-Feb-2021 14:52:19 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 14:52:19 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 14:52:19 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 14:52:19 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:61
+[28-Feb-2021 14:52:19 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 14:52:19 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP Warning:  Undefined variable $title in /home/janus/www/php-g21/app/Views/profile/index.php on line 11
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:61
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/index', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:57
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   7. View->render($view = 'profile/index', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }]) /home/janus/www/php-g21/core/Controller.php:37
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g21/app/Views/layouts/partials/_flash-message.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/app/Views/profile/index.php on line 16
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP Stack trace:
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:61
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/index', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:57
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   7. View->render($view = 'profile/index', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }]) /home/janus/www/php-g21/core/Controller.php:37
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[28-Feb-2021 14:57:48 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/home/janus/www/php-g21/app/Views/layouts/partials/_flash-message.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/app/Views/profile/index.php:16
+Stack trace:
+#0 /home/janus/www/php-g21/core/View.php(22): include_once()
+#1 /home/janus/www/php-g21/core/Controller.php(37): View->render()
+#2 /home/janus/www/php-g21/app/Controllers/ProfileController.php(57): Controller->render()
+#3 /home/janus/www/php-g21/core/Router.php(110): ProfileController->index()
+#4 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#5 /home/janus/www/php-g21/bootstrap/app.php(61): Router->run()
+#6 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#7 {main}
+  thrown in /home/janus/www/php-g21/app/Views/profile/index.php on line 16
+[28-Feb-2021 15:27:57 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of type Session is not callable in /home/janus/www/php-g21/app/Views/layouts/partials/_flash-message.php:5
+Stack trace:
+#0 /home/janus/www/php-g21/app/Views/profile/index.php(16): require_once()
+#1 /home/janus/www/php-g21/core/View.php(22): include_once('...')
+#2 /home/janus/www/php-g21/core/Controller.php(37): View->render()
+#3 /home/janus/www/php-g21/app/Controllers/ProfileController.php(57): Controller->render()
+#4 /home/janus/www/php-g21/core/Router.php(110): ProfileController->index()
+#5 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#6 /home/janus/www/php-g21/bootstrap/app.php(61): Router->run()
+#7 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#8 {main}
+  thrown in /home/janus/www/php-g21/app/Views/layouts/partials/_flash-message.php on line 5
+[01-Mar-2021 08:06:36 Europe/Kiev] PHP Warning:  Undefined property: ProfileController::$user in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 35
+[01-Mar-2021 08:06:36 Europe/Kiev] PHP Stack trace:
+[01-Mar-2021 08:06:36 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[01-Mar-2021 08:06:36 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[01-Mar-2021 08:06:36 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:64
+[01-Mar-2021 08:06:36 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[01-Mar-2021 08:06:36 Europe/Kiev] PHP   5. ProfileController->index([]) /home/janus/www/php-g21/core/Router.php:110
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP Warning:  Undefined variable $_SESSION in /home/janus/www/php-g21/bootstrap/app.php on line 13
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP Stack trace:
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:64
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'HomeController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   5. HomeController->__construct() /home/janus/www/php-g21/core/Router.php:98
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   6. HomeController->__construct() /home/janus/www/php-g21/app/Controllers/HomeController.php:13
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   7. View->__construct($layout = 'app') /home/janus/www/php-g21/core/Controller.php:24
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   8. require_once() /home/janus/www/php-g21/core/View.php:12
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g21/app/Views/layouts/app.php:11
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP  10. isGuest() /home/janus/www/php-g21/app/Views/layouts/partials/site/nav.php:31
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in /home/janus/www/php-g21/bootstrap/app.php on line 13
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP Stack trace:
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:64
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'HomeController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   5. HomeController->__construct() /home/janus/www/php-g21/core/Router.php:98
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   6. HomeController->__construct() /home/janus/www/php-g21/app/Controllers/HomeController.php:13
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   7. View->__construct($layout = 'app') /home/janus/www/php-g21/core/Controller.php:24
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   8. require_once() /home/janus/www/php-g21/core/View.php:12
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g21/app/Views/layouts/app.php:11
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP  10. isGuest() /home/janus/www/php-g21/app/Views/layouts/partials/site/nav.php:31
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP Warning:  Undefined variable $_SESSION in /home/janus/www/php-g21/bootstrap/app.php on line 13
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP Stack trace:
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:64
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'HomeController', $action = 'getProductsWithCategory', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   5. HomeController->__construct() /home/janus/www/php-g21/core/Router.php:98
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   6. HomeController->__construct() /home/janus/www/php-g21/app/Controllers/HomeController.php:13
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   7. View->__construct($layout = 'app') /home/janus/www/php-g21/core/Controller.php:24
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   8. require_once() /home/janus/www/php-g21/core/View.php:12
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g21/app/Views/layouts/app.php:11
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP  10. isGuest() /home/janus/www/php-g21/app/Views/layouts/partials/site/nav.php:31
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in /home/janus/www/php-g21/bootstrap/app.php on line 13
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP Stack trace:
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:64
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'HomeController', $action = 'getProductsWithCategory', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:66
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   5. HomeController->__construct() /home/janus/www/php-g21/core/Router.php:98
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   6. HomeController->__construct() /home/janus/www/php-g21/app/Controllers/HomeController.php:13
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   7. View->__construct($layout = 'app') /home/janus/www/php-g21/core/Controller.php:24
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   8. require_once() /home/janus/www/php-g21/core/View.php:12
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g21/app/Views/layouts/app.php:11
+[01-Mar-2021 08:12:08 Europe/Kiev] PHP  10. isGuest() /home/janus/www/php-g21/app/Views/layouts/partials/site/nav.php:31
+[01-Mar-2021 08:39:06 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function render() in /home/janus/www/php-g21/app/Controllers/AboutController.php:3
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(97): include_once()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/AboutController.php on line 3
