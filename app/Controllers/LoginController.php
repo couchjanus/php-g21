@@ -45,6 +45,7 @@ class LoginController extends BaseController
         }
     }
 
+
     /**
      * Авторизация пользователя
      *

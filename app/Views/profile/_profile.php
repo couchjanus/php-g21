@@ -24,7 +24,7 @@
 			<li class="nav-item">
 			<a class="nav-link" href="/profile">
 			<i class="fa fa-user"></i>
-			Account Settings </a>
+			Settings </a>
 			</li>
 			<li class="nav-item">
 			<a class="nav-link" href="#">

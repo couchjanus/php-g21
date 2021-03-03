@@ -2,80 +2,56 @@
     <div class="container p-0">
         <div class="row">
             <?php require_once VIEWS.'/profile/_profile.php'; ?>
-            <div class="col-lg-9 order-1 order-lg-2 mb-5 mb-lg-0">
+            <div class="col-lg-9 order-1 order-lg-2 mb-5 mx-3 mb-lg-0">
                 <section class="pt-2">
-                        <header class="text-center">
-                        <p class="small text-muted small text-uppercase mb-1">Детали заказа</p>
-                        <h2 class="h5 text-uppercase mb-4"><?=$title; ?></h2>
+                    <header class="text-center">
+                        <h2 class="h5 text-uppercase mb-4">Детали заказа <?=$order->id?></h2>
                         <dt>Дата заказа: <?=$order->order_date?>
-                        <dt>Статус: <?=Helper::getOrderStatus($order->status);?>
+                        <dt>Статус: <?=$order->status;?>
                         <h2 class='mb-5 mt-3 mb-lg-0'>Товары в заказе</h2>
                     </header>
                 </section>
                 
-                <?php $totalValue = 0;?>
+                <div class="row mt-3">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th scope="col">Image</th>
+                          <th scope="col">Товар</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Цена</th>
+                          <th scope="col">Amount</th>
+                          
+                        </tr>
+                      </thead>
 
-                <div class='mb-5 mt-3 mb-lg-0'>
-                    <div class='table-row'>
-                        <div class='table-column table-header'>
-                                Image
-                        </div>
-                        <div class='table-column table-header'>
-                                Товар
-                        </div>
-                        <div class='table-column table-header'>
-                                Цена
-                        </div>
-                        <div class='table-column table-header'>
-                            Amount
-                        </div>
-                    </div>
-                    <?php foreach((array)$products as $product):?>
-                    <div class='table-row'>
-                        <div class='table-column'>
-                            <div class='green-column'>
-                            <img src="/assets/images/products/<?=$product['image'];?>" class="img-fluid w-20">
-                            </div>
-                        </div>
-                        <div class='table-column table-content'>
-                            
-                            <?=$product['name']?>
-                            
-                        </div>
-                        <div class='table-column table-content'>
-                            
-                            <?=$product['price'];?>
-                            
-                        </div>
-                        <div class='table-column table-content'>
-                            
-                            <?=$product['amount'];?>
-                            
-                        </div>
-                    </div>
-                        <?php 
-                            //подсчитываем сумму по каждому товару и пишем в массив
-                            $arr[] = $product['price'] * $product['amount'];
-                            //считаем общую сумму всех товаров в заказе, с учетом их кол-ва
-                            $totalValue = array_sum($arr);
-                        ?>
-                    <?php endforeach;?>
+                      <tbody>
+                       
+                        <?php foreach((array)$products as $product):?>
+                          <tr>
+                              <td><img src="<?=$product['image'];?>" width=200 class="img-fluid"></td>
+                              <td><?=$product['name']?></td>
+                              <td><?=$order->status?></td>
+                              <td><?=$product['price'];?></td>
+                              <td><?=$product['amount'];?></td>
+                          </tr>
+                          
+                        <?php endforeach;?>
 
-                    <div class='table-row'>
-                        <div class='table-column table-header'>
-                            Сумма заказа:
-                        </div>
-                        <div class='expand-column table-header'>
-                            
-                            <?='' . $totalValue.' грн';?>
-                            
-                        </div>
-                    </div>
+                          <tr>
+                              <th colspan="5">Сумма заказа: <?='' . $total.' грн';?></th>
+                          </tr>
+
+                      </tbody>
+                    </table>
                 </div>
-                <div class="row">
-                    <?php require_once VIEWS.'/layouts/partials/_flash-message.php'; ?>
-                </div>
+                    
             </div>
         </div>
+
+        <div class="row">
+           <?php require_once VIEWS.'/layouts/partials/_flash-message.php'; ?>
+        </div>
     </div>
+        
 </section>

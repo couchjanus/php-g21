@@ -47,11 +47,12 @@ return [
     'admin/users/edit/{id}' => 'Admin\UserController@edit',
     'admin/users/update' => 'Admin\UserController@update',
     'admin/users/delete/{id}' => 'Admin\UserController@delete',
+
+    "admin/orders" => "Admin\OrderController@index",
    
    
    'api/products' => 'HomeController@getProductsWithCategory',
    'api/products/{id}' => 'HomeController@getProduct',
-   
    'api/categories'=> 'HomeController@getCategories',
    'api/categories/count'=> 'HomeController@getCategoriesWithCount',
 
@@ -61,5 +62,10 @@ return [
    'login' => 'LoginController@signin',
    'logout' => 'LoginController@logout',
    'profile' => 'ProfileController@index',
+
+   'profile/orders' => 'ProfileController@ordersList',
+   'profile/orders/view/{id}'=> 'ProfileController@orderView',
+   'profile/orders/check/{id}'=> 'ProfileController@checkOrder',
+   'profile/orders/change'=> 'ProfileController@changeOrder',
 
 ];

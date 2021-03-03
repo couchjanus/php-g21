@@ -1116,3 +1116,667 @@ Stack trace:
 #3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
 #4 {main}
   thrown in /home/janus/www/php-g21/app/Controllers/AboutController.php on line 3
+[02-Mar-2021 11:13:49 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function render() in /home/janus/www/php-g21/app/Controllers/AboutController.php:3
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(97): include_once()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/AboutController.php on line 3
+[02-Mar-2021 11:30:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/janus/www/php-g21/app/Controllers/ProfileController.php:49
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): ProfileController->ordersList()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 49
+[02-Mar-2021 11:31:29 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/janus/www/php-g21/app/Controllers/ProfileController.php:49
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): ProfileController->ordersList()
+#1 /home/janus/www/php-g21/core/Router.php(66): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 49
+[02-Mar-2021 12:24:21 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Product" not found in /home/janus/www/php-g21/app/Controllers/ProfileController.php:68
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): ProfileController->orderView()
+#1 /home/janus/www/php-g21/core/Router.php(76): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 68
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Warning:  Attempt to read property "name" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 73
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Warning:  Attempt to read property "price" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 74
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Warning:  Attempt to read property "image" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 75
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Warning:  Attempt to read property "id" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 8
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g21/app/Views/layouts/.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/core/View.php on line 12
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ErrorController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:79
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   5. ErrorController->__construct() /home/janus/www/php-g21/core/Router.php:98
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   6. ErrorController->__construct('app') /home/janus/www/php-g21/app/Controllers/ErrorController.php:10
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP   7. View->__construct($layout = '') /home/janus/www/php-g21/core/Controller.php:18
+[02-Mar-2021 12:24:51 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/home/janus/www/php-g21/app/Views/layouts/.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/core/View.php:12
+Stack trace:
+#0 /home/janus/www/php-g21/core/Controller.php(18): View->__construct()
+#1 /home/janus/www/php-g21/app/Controllers/ErrorController.php(10): Controller->__construct()
+#2 /home/janus/www/php-g21/core/Router.php(98): ErrorController->__construct()
+#3 /home/janus/www/php-g21/core/Router.php(79): Router->init()
+#4 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/core/View.php on line 12
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Warning:  Attempt to read property "name" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 73
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Warning:  Attempt to read property "price" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 74
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Warning:  Attempt to read property "image" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 75
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Warning:  Attempt to read property "id" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 8
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g21/app/Views/layouts/.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/core/View.php on line 12
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ErrorController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:79
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   5. ErrorController->__construct() /home/janus/www/php-g21/core/Router.php:98
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   6. ErrorController->__construct('app') /home/janus/www/php-g21/app/Controllers/ErrorController.php:10
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP   7. View->__construct($layout = '') /home/janus/www/php-g21/core/Controller.php:18
+[02-Mar-2021 12:25:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/home/janus/www/php-g21/app/Views/layouts/.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/core/View.php:12
+Stack trace:
+#0 /home/janus/www/php-g21/core/Controller.php(18): View->__construct()
+#1 /home/janus/www/php-g21/app/Controllers/ErrorController.php(10): Controller->__construct()
+#2 /home/janus/www/php-g21/core/Router.php(98): ErrorController->__construct()
+#3 /home/janus/www/php-g21/core/Router.php(79): Router->init()
+#4 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/core/View.php on line 12
+[02-Mar-2021 12:27:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Product::runWhere() in /home/janus/www/php-g21/app/Controllers/ProfileController.php:69
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): ProfileController->orderView()
+#1 /home/janus/www/php-g21/core/Router.php(76): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 69
+[02-Mar-2021 12:27:59 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Product::whereSql() in /home/janus/www/php-g21/app/Controllers/ProfileController.php:69
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(110): ProfileController->orderView()
+#1 /home/janus/www/php-g21/core/Router.php(76): Router->init()
+#2 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#3 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#4 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 69
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP Warning:  Attempt to read property "id" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 8
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g21/app/Views/layouts/.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/core/View.php on line 12
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ErrorController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:79
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   5. ErrorController->__construct() /home/janus/www/php-g21/core/Router.php:98
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   6. ErrorController->__construct('app') /home/janus/www/php-g21/app/Controllers/ErrorController.php:10
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP   7. View->__construct($layout = '') /home/janus/www/php-g21/core/Controller.php:18
+[02-Mar-2021 12:28:28 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/home/janus/www/php-g21/app/Views/layouts/.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/core/View.php:12
+Stack trace:
+#0 /home/janus/www/php-g21/core/Controller.php(18): View->__construct()
+#1 /home/janus/www/php-g21/app/Controllers/ErrorController.php(10): Controller->__construct()
+#2 /home/janus/www/php-g21/core/Router.php(98): ErrorController->__construct()
+#3 /home/janus/www/php-g21/core/Router.php(79): Router->init()
+#4 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/core/View.php on line 12
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g21/app/Views/layouts/.php): Failed to open stream: No such file or directory in /home/janus/www/php-g21/core/View.php on line 12
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ErrorController', $action = 'index', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:79
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   5. ErrorController->__construct() /home/janus/www/php-g21/core/Router.php:98
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   6. ErrorController->__construct('app') /home/janus/www/php-g21/app/Controllers/ErrorController.php:10
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP   7. View->__construct($layout = '') /home/janus/www/php-g21/core/Controller.php:18
+[02-Mar-2021 12:29:16 Europe/Kiev] PHP Fatal error:  Uncaught Error: Failed opening required '/home/janus/www/php-g21/app/Views/layouts/.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g21/core/View.php:12
+Stack trace:
+#0 /home/janus/www/php-g21/core/Controller.php(18): View->__construct()
+#1 /home/janus/www/php-g21/app/Controllers/ErrorController.php(10): Controller->__construct()
+#2 /home/janus/www/php-g21/core/Router.php(98): ErrorController->__construct()
+#3 /home/janus/www/php-g21/core/Router.php(79): Router->init()
+#4 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/core/View.php on line 12
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:31:37 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:31:39 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:33:37 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:34:20 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:34:22 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:34:45 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:34:47 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:80
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:35:04 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:38:24 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:38:26 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP Warning:  Attempt to read property "id" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 76
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP Warning:  Attempt to read property "amount" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 77
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:39:04 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:40:23 Europe/Kiev] PHP Warning:  Attempt to read property "id" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 74
+[02-Mar-2021 12:40:23 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:40:23 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:40:23 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:40:23 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:40:23 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:40:23 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:40:23 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/janus/www/php-g21/core/Model.php:71
+Stack trace:
+#0 /home/janus/www/php-g21/core/Model.php(71): PDO->prepare()
+#1 /home/janus/www/php-g21/app/Controllers/ProfileController.php(74): Model->getWhere()
+#2 /home/janus/www/php-g21/core/Router.php(110): ProfileController->orderView()
+#3 /home/janus/www/php-g21/core/Router.php(76): Router->init()
+#4 /home/janus/www/php-g21/bootstrap/app.php(66): Router->run()
+#5 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#6 {main}
+  thrown in /home/janus/www/php-g21/core/Model.php on line 71
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP Warning:  Attempt to read property "id" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 76
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP Warning:  Attempt to read property "amount" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 77
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:41:08 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:85
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:41:58 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP Warning:  Undefined array key "status" in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 78
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP Warning:  Attempt to read property "order_date" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 9
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:86
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Views/profile/order.php on line 10
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   6. ProfileController->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:86
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   7. View->render($view = 'profile/order', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'order' => ['id' => 5, 'amount' => 1], 'products' => [0 => [...]]]) /home/janus/www/php-g21/core/Controller.php:24
+[02-Mar-2021 12:42:50 Europe/Kiev] PHP   8. include_once() /home/janus/www/php-g21/core/View.php:22
+[02-Mar-2021 12:46:07 Europe/Kiev] PHP Warning:  Undefined property: stdClass::$amount in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 76
+[02-Mar-2021 12:46:07 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:46:07 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:46:07 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:46:07 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:46:07 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:46:07 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:49:22 Europe/Kiev] PHP Warning:  Undefined property: stdClass::$amount in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 76
+[02-Mar-2021 12:49:22 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:49:22 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:49:22 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:49:22 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:49:22 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:49:22 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 12:49:38 Europe/Kiev] PHP Warning:  Undefined property: stdClass::$amount in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 76
+[02-Mar-2021 12:49:38 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 12:49:38 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 12:49:38 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 12:49:38 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 12:49:38 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 12:49:38 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP Warning:  Attempt to read property "id" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 73
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP Warning:  Attempt to read property "amount" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 74
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP Warning:  Attempt to read property "status" on array in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 75
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 13:15:26 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 13:16:43 Europe/Kiev] PHP Warning:  Undefined array key "status" in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 75
+[02-Mar-2021 13:16:43 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 13:16:43 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 13:16:43 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 13:16:43 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 13:16:43 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 13:16:43 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
+[02-Mar-2021 13:17:13 Europe/Kiev] PHP Warning:  Undefined array key "status" in /home/janus/www/php-g21/app/Controllers/ProfileController.php on line 75
+[02-Mar-2021 13:17:13 Europe/Kiev] PHP Stack trace:
+[02-Mar-2021 13:17:13 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[02-Mar-2021 13:17:13 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[02-Mar-2021 13:17:13 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g21/bootstrap/app.php:66
+[02-Mar-2021 13:17:13 Europe/Kiev] PHP   4. Router->init($controllerPath = '/', $controller = 'ProfileController', $action = 'orderView', $vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:76
+[02-Mar-2021 13:17:13 Europe/Kiev] PHP   5. ProfileController->orderView($vars = ['id' => '2', 0 => '2']) /home/janus/www/php-g21/core/Router.php:110
