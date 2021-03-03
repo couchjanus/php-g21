@@ -1,5 +1,8 @@
 <?php
-require_once ROOT."/core/Connection.php";
+namespace Core;
+
+use Core\Connection;
+use PDO;
 
 class Model
 {

@@ -1,15 +1,21 @@
 <?php
+namespace App\Controllers;
 
-require_once MODELS.'/User.php';
-require_once MODELS.'/Order.php';
-require_once MODELS.'/Product.php';
-require_once ROOT.'/core/Controller.php';
+// require_once MODELS.'/User.php';
+// require_once MODELS.'/Order.php';
+// require_once MODELS.'/Product.php';
+// require_once ROOT.'/core/Controller.php';
 
-/**
- * ProfileController.php
- * 
- */
-class ProfileController extends Controller
+// require_once ROOT.'/core/AuthInterface.php';
+
+use Core\Controller;
+use Core\AuthInterface;
+
+use App\Models\User;
+use App\Models\Order;
+use App\Models\Product;
+
+class ProfileController extends Controller implements AuthInterface
 {
     protected static string $layout = 'app';
     
@@ -17,15 +23,13 @@ class ProfileController extends Controller
     {
         parent::__construct();
 
-        if($userId=$this->session()->get('userId')){
-            $this->user = (new User)->getByPK($userId);
-            if( $this->user != NULL ) {
-                $this->logged_in = true;
-                $this->user_id = $userId;
-            }
-        }
     }
     
+    public function isAdmin()
+    {
+        return $this->user->role_id;
+    }
+
  
     public function index()
     {

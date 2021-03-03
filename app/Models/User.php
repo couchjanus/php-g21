@@ -1,9 +1,11 @@
 <?php
+namespace App\Models;
 /**
  * class User
  */
 
-require_once ROOT."/core/Model.php";
+// require_once ROOT."/core/Model.php";
+use Core\Model;
 
 class User extends Model
 {

@@ -1,6 +1,8 @@
 <?php
-require_once ROOT."/core/View.php";
-require_once ROOT."/core/BaseController.php";
+namespace Core;
+
+use Core\View;
+use Core\BaseController;
 
 class Controller extends BaseController
 {

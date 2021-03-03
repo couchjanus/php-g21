@@ -1,5 +1,6 @@
 <?php 
-require_once ROOT.'/core/Session.php';
+// require_once ROOT.'/core/Session.php';
+use Core\Session;
 
 $session = Session::instance();
 if ($session->flash()>0) {

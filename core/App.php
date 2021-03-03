@@ -1,18 +1,16 @@
 <?php
-require_once CORE.'/Request.php';
-require_once CORE.'/Router.php';
-require_once CORE.'/Session.php';
+namespace Core;
+
+use Core\Request;
+use Core\Router;
+use Core\Session;
 
 class App {
 
-    public $request = null;
-    
     public function __construct(){
-        // включаем буфер
-        ob_start();
-        // Запускаем сессию
-        Session::init();
-        $this->request = new Request();
+
+        Session::instance();
+
     }
 
     private function init() {
@@ -40,6 +38,7 @@ class App {
     public function run(){
         $this->init();
         $this->setErrorLogging();
-        (new Router($this->request))->run();
+        (new Router(new Request()))->run();
+
     }
 }

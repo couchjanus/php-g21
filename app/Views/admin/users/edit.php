@@ -1,11 +1,14 @@
-<div class="col">
+<?php includeWithVars(VIEWS.'/layouts/partials/admin/toolbar.php', [
+    'url'=> "/admin/users",
+    'label'=> "All Users",
+    'title'=> "Edit User"
+]);?>
+
+<div class="row g-3">
+  <div class="col-12">
 
     <div class="card">
-        <div class="card-header bg-primary text-white">
-            <i class="fa fa-table"></i> <?php echo $title;?> <a href="/admin/users" class="float-right"><button
-                    class="btn btn-primary text-right"><span data-feather="arrow-left-circle"></span> Go
-                    Back</button></a>
-        </div>
+        
         <div class="card-body">
             <form action="/admin/users/update" method="POST">
             <input type="hidden" name="id" value="<?=$user->id?>">
@@ -56,4 +59,5 @@
         </div>
     </div>
 
+  </div>
 </div>

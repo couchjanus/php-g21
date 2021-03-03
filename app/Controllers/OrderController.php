@@ -1,8 +1,9 @@
 <?php
+namespace App\Controllers;
 
-require_once ROOT.'/core/BaseController.php';
-require_once MODELS.'/User.php';
-require_once MODELS.'/Order.php';
+use Core\BaseController;
+use App\Models\User;
+use App\Models\Order;
 
 class OrderController extends BaseController
 {

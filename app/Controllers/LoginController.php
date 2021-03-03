@@ -1,10 +1,14 @@
 <?php
+namespace App\Controllers;
 /**
  * LoginController.php
  * Контроллер для authetication users
  */
-require_once MODELS.'/User.php';
-require_once ROOT.'/core/BaseController.php';
+// require_once MODELS.'/User.php';
+// require_once ROOT.'/core/BaseController.php';
+
+use App\Models\User;
+use Core\BaseController;
 
 class LoginController extends BaseController
 {

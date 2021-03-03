@@ -1,7 +1,12 @@
 <?php
-require_once ROOT."/core/Request.php";
-require_once ROOT."/core/Response.php";
-require_once ROOT."/core/Session.php";
+namespace Core;
+
+use Core\Request;
+use Core\Response;
+use Core\Session;
+use App\Models\User;
+
+// require_once ROOT."/app/Models/User.php";
 
 class BaseController {
   
@@ -28,6 +33,14 @@ class BaseController {
 	public function __construct(Response $response = null, Request $request = null){
 		$this->response = $response ?? new Response();
         $this->request  = $request ?? new Request();
+
+        if($userId=$this->session()->get('userId')){
+            $this->user = (new User)->getByPK($userId);
+            if( $this->user != null ) {
+                $this->logged_in = true;
+                $this->user_id = $userId;
+            }
+        }
      }
 
  

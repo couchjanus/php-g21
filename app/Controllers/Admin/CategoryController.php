@@ -1,6 +1,12 @@
 <?php
-require_once ROOT."/core/Controller.php";
-require_once MODELS."/Category.php";
+
+namespace App\Controllers\Admin;
+// require_once ROOT."/core/Controller.php";
+// require_once MODELS."/Category.php";
+
+use Core\Controller;
+use  App\Models\Category;
+
 
 class CategoryController extends Controller
 {
