@@ -1,13 +1,6 @@
 <?php
 namespace App\Controllers;
 
-// require_once MODELS.'/User.php';
-// require_once MODELS.'/Order.php';
-// require_once MODELS.'/Product.php';
-// require_once ROOT.'/core/Controller.php';
-
-// require_once ROOT.'/core/AuthInterface.php';
-
 use Core\Controller;
 use Core\AuthInterface;
 
@@ -23,43 +16,32 @@ class ProfileController extends Controller implements AuthInterface
     {
         parent::__construct();
 
+        if (!$this->auth()) {
+             $this->redirect('/#login');
+        }
+
     }
     
     public function isAdmin()
     {
-        return $this->user->role_id;
+        return $this->role();
     }
-
  
     public function index()
     {
-        if (!$this->user) {
-             $this->redirect('/#login');
-        }
-        $user = $this->user;
-        $this->render('profile/index', compact('user'));
+        $this->render('profile/index', ["user" => $this->user]);
     }
 
 
     public function ordersList()
     {
-        if (!$this->user) {
-             $this->redirect('/#login');
-        }
-        $sql = "SELECT id, status, products, DATE_FORMAT(`order_date`, '%d.%m.%Y %H:%i:%s') AS formated_date
-                FROM orders WHERE user_id =". $this->user->id."
-                ORDER BY id DESC";
-        $orders = (new Order)->runSql($sql);
-       
+        $orders = (new Order)->getAll(["user_id" => $this->user->id]);
         $user = $this->user;
         $this->render('profile/orders', compact('user', 'orders'));
     }
 
     public function orderView($vars)
     {
-        if (!$this->user) {
-             $this->redirect('/#login');
-        }
         extract($vars);
 
         [$products, $total, $order] = $this->orderContent($id);
@@ -71,10 +53,6 @@ class ProfileController extends Controller implements AuthInterface
     
     public function checkOrder($vars)
     {
-        if (!$this->user) {
-             $this->redirect('/#login');
-        }
-
         extract($vars);
 
         [$products, $total, $order] = $this->orderContent($id);
@@ -89,7 +67,7 @@ class ProfileController extends Controller implements AuthInterface
         $products = [];
         
         foreach ($items as $item){
-            $product = (new Product)->getWhere("SELECT * FROM products WHERE id = ". $item['id']);
+            $product = (new Product)->getByPK($item['id']);
             $total += $item['amount']*$product->price;
             array_push($products, [
                 "id" => $order->id,
@@ -100,7 +78,6 @@ class ProfileController extends Controller implements AuthInterface
                 'image' => $product->image
             ]);
         }
-
         return [$products, $total, $order];
     }
 }

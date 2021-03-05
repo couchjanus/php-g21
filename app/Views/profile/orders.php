@@ -33,7 +33,7 @@
                 <?php foreach ($orders as $order):?>
                   <tr>
                   <td><?=$order->id?></td>
-                  <td><?=$order->formated_date?></td>
+                  <td><?=$order->order_date?></td>
                   <td><?=$order->status?></td>
                   <td><a title="Show order" href="/profile/orders/view/<?=$order->id;?>"><button class="btn btn-warning">View</button></a>
                     <a title="Check Order" href="/profile/orders/check/<?= $order->id;?>"><button class="btn btn-danger">Check out</button></a></td>

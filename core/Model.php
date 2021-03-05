@@ -76,4 +76,18 @@ class Model
         return $stmt->fetch();
     }
 
+    public function getAll($parameters){
+        
+        foreach ($parameters as $key => $value) {
+            $p = $key."='".$value."'";
+        }
+
+        $sql = sprintf(
+            'SELECT * FROM %s WHERE %s ',
+            static::$table, $p);
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
 }

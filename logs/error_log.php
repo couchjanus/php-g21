@@ -2258,3 +2258,541 @@ Stack trace:
 #7 /home/janus/www/php-g21/public/index.php(3): require_once('...')
 #8 {main}
   thrown in /home/janus/www/php-g21/app/Models/Product.php on line 5
+[05-Mar-2021 08:29:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:29:23 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:29:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:29:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/janus/www/php-g21/core/BaseController.php:63
+Stack trace:
+#0 /home/janus/www/php-g21/app/Controllers/Admin/AdminController.php(20): Core\BaseController->role()
+#1 /home/janus/www/php-g21/app/Controllers/Admin/DashboardController.php(21): App\Controllers\Admin\AdminController->isAdmin()
+#2 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\Admin\DashboardController->index()
+#3 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#4 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#5 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#6 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#7 {main}
+  thrown in /home/janus/www/php-g21/core/BaseController.php on line 63
+[05-Mar-2021 08:31:31 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Model" not found in /home/janus/www/php-g21/app/Models/Role.php:8
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(53): include_once()
+#1 /home/janus/www/php-g21/bootstrap/app.php(63): load()
+#2 /home/janus/www/php-g21/core/BaseController.php(65): {closure}()
+#3 /home/janus/www/php-g21/app/Controllers/Admin/AdminController.php(20): Core\BaseController->role()
+#4 /home/janus/www/php-g21/app/Controllers/Admin/DashboardController.php(21): App\Controllers\Admin\AdminController->isAdmin()
+#5 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\Admin\DashboardController->index()
+#6 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#7 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#8 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#9 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#10 {main}
+  thrown in /home/janus/www/php-g21/app/Models/Role.php on line 8
+[05-Mar-2021 08:32:43 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:32:53 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:34:02 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:41:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:41:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:41:49 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:42:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 08:42:45 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:46:28 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:46:39 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:46:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:46:50 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:46:53 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:46:55 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:46:57 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:46:58 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:47:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 09:55:38 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: 4 arguments are required, 3 given in /home/janus/www/php-g21/core/Model.php:87
+Stack trace:
+#0 /home/janus/www/php-g21/core/Model.php(87): sprintf()
+#1 /home/janus/www/php-g21/app/Controllers/ProfileController.php(46): Core\Model->getAll()
+#2 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\ProfileController->ordersList()
+#3 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#4 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#5 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#6 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#7 {main}
+  thrown in /home/janus/www/php-g21/core/Model.php on line 87
+[05-Mar-2021 09:56:05 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: 4 arguments are required, 3 given in /home/janus/www/php-g21/core/Model.php:87
+Stack trace:
+#0 /home/janus/www/php-g21/core/Model.php(87): sprintf()
+#1 /home/janus/www/php-g21/app/Controllers/ProfileController.php(46): Core\Model->getAll()
+#2 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\ProfileController->ordersList()
+#3 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#4 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#5 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#6 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#7 {main}
+  thrown in /home/janus/www/php-g21/core/Model.php on line 87
+[05-Mar-2021 10:00:11 Europe/Kiev] PHP Parse error:  Unclosed '{' on line 79 does not match ')' in /home/janus/www/php-g21/core/Model.php on line 86
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP Warning:  Array to string conversion in /home/janus/www/php-g21/core/Model.php on line 85
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP Stack trace:
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP   3. Core\App->run() /home/janus/www/php-g21/bootstrap/app.php:98
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP   4. Core\Router->run() /home/janus/www/php-g21/core/App.php:41
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP   5. Core\Router->init($path = 'ProfileController@ordersList', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:19
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP   6. App\Controllers\ProfileController->ordersList([]) /home/janus/www/php-g21/core/Router.php:39
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP   7. App\Models\Order->getAll($parameters = ['user_id' => 3]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:46
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP   8. sprintf($format = 'SELECT * FROM %s WHERE %s ', ...$values = variadic([0 => 'user_id=\'3\''])) /home/janus/www/php-g21/core/Model.php:85
+[05-Mar-2021 10:00:32 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause' in /home/janus/www/php-g21/core/Model.php:92
+Stack trace:
+#0 /home/janus/www/php-g21/core/Model.php(92): PDO->prepare()
+#1 /home/janus/www/php-g21/app/Controllers/ProfileController.php(46): Core\Model->getAll()
+#2 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\ProfileController->ordersList()
+#3 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#4 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#5 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#6 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#7 {main}
+  thrown in /home/janus/www/php-g21/core/Model.php on line 92
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP Warning:  Undefined property: stdClass::$formated_date in /home/janus/www/php-g21/app/Views/profile/orders.php on line 36
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP Stack trace:
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   3. Core\App->run() /home/janus/www/php-g21/bootstrap/app.php:98
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   4. Core\Router->run() /home/janus/www/php-g21/core/App.php:41
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   5. Core\Router->init($path = 'ProfileController@ordersList', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:19
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   6. App\Controllers\ProfileController->ordersList([]) /home/janus/www/php-g21/core/Router.php:39
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   7. App\Controllers\ProfileController->render($view = 'profile/orders', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'orders' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:49
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   8. Core\View->render($view = 'profile/orders', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'orders' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]]) /home/janus/www/php-g21/core/Controller.php:26
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   9. include_once() /home/janus/www/php-g21/core/View.php:23
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP Warning:  Undefined property: stdClass::$formated_date in /home/janus/www/php-g21/app/Views/profile/orders.php on line 36
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP Stack trace:
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   3. Core\App->run() /home/janus/www/php-g21/bootstrap/app.php:98
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   4. Core\Router->run() /home/janus/www/php-g21/core/App.php:41
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   5. Core\Router->init($path = 'ProfileController@ordersList', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:19
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   6. App\Controllers\ProfileController->ordersList([]) /home/janus/www/php-g21/core/Router.php:39
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   7. App\Controllers\ProfileController->render($view = 'profile/orders', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'orders' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:49
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   8. Core\View->render($view = 'profile/orders', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'orders' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]]) /home/janus/www/php-g21/core/Controller.php:26
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   9. include_once() /home/janus/www/php-g21/core/View.php:23
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP Warning:  Undefined property: stdClass::$formated_date in /home/janus/www/php-g21/app/Views/profile/orders.php on line 36
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP Stack trace:
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   3. Core\App->run() /home/janus/www/php-g21/bootstrap/app.php:98
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   4. Core\Router->run() /home/janus/www/php-g21/core/App.php:41
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   5. Core\Router->init($path = 'ProfileController@ordersList', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:19
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   6. App\Controllers\ProfileController->ordersList([]) /home/janus/www/php-g21/core/Router.php:39
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   7. App\Controllers\ProfileController->render($view = 'profile/orders', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'orders' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:49
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   8. Core\View->render($view = 'profile/orders', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'orders' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]]) /home/janus/www/php-g21/core/Controller.php:26
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   9. include_once() /home/janus/www/php-g21/core/View.php:23
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP Warning:  Undefined property: stdClass::$formated_date in /home/janus/www/php-g21/app/Views/profile/orders.php on line 36
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP Stack trace:
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g21/public/index.php:0
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g21/public/index.php:3
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   3. Core\App->run() /home/janus/www/php-g21/bootstrap/app.php:98
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   4. Core\Router->run() /home/janus/www/php-g21/core/App.php:41
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   5. Core\Router->init($path = 'ProfileController@ordersList', $vars = *uninitialized*) /home/janus/www/php-g21/core/Router.php:19
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   6. App\Controllers\ProfileController->ordersList([]) /home/janus/www/php-g21/core/Router.php:39
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   7. App\Controllers\ProfileController->render($view = 'profile/orders', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'orders' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]]) /home/janus/www/php-g21/app/Controllers/ProfileController.php:49
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   8. Core\View->render($view = 'profile/orders', $params = ['user' => class stdClass { public $id = 3; public $name = 'dog'; public $email = 'dog@my.cat'; public $password = '$2y$12$cSUWeUf4lUTHZosWn9Q7JuC3Qol0VdCafSlHL9n56tPLxhEvRuRpy'; public $role_id = 3; public $status = 1; public $first_name = NULL; public $last_name = NULL; public $phone_number = NULL }, 'orders' => [0 => class stdClass { ... }, 1 => class stdClass { ... }, 2 => class stdClass { ... }, 3 => class stdClass { ... }]]) /home/janus/www/php-g21/core/Controller.php:26
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP   9. include_once() /home/janus/www/php-g21/core/View.php:23
+[05-Mar-2021 10:07:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:09:14 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:09:21 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:09:23 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:13:22 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:13:23 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:13:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:13:26 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:23:12 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:23:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:23:38 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:23:40 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:23:42 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:23:48 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:23:50 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:23:52 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:23:56 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:24:10 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Controller" not found in /home/janus/www/php-g21/app/Controllers/ErrorController.php:6
+Stack trace:
+#0 /home/janus/www/php-g21/bootstrap/app.php(53): include_once()
+#1 /home/janus/www/php-g21/bootstrap/app.php(63): load()
+#2 /home/janus/www/php-g21/core/Router.php(38): {closure}()
+#3 /home/janus/www/php-g21/core/Router.php(31): Core\Router->init()
+#4 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#5 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#6 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#7 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/ErrorController.php on line 6
+[05-Mar-2021 10:24:21 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:24:27 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:24:29 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:24:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:27:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:28:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:28:12 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:28:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34
+[05-Mar-2021 10:32:40 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Product" not found in /home/janus/www/php-g21/app/Controllers/HomeController.php:34
+Stack trace:
+#0 /home/janus/www/php-g21/core/Router.php(39): App\Controllers\HomeController->getProductsWithCategory()
+#1 /home/janus/www/php-g21/core/Router.php(19): Core\Router->init()
+#2 /home/janus/www/php-g21/core/App.php(41): Core\Router->run()
+#3 /home/janus/www/php-g21/bootstrap/app.php(98): Core\App->run()
+#4 /home/janus/www/php-g21/public/index.php(3): require_once('...')
+#5 {main}
+  thrown in /home/janus/www/php-g21/app/Controllers/HomeController.php on line 34

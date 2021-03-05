@@ -5,6 +5,7 @@ use Core\Request;
 use Core\Response;
 use Core\Session;
 use App\Models\User;
+use App\Models\Role;
 
 // require_once ROOT."/app/Models/User.php";
 
@@ -51,6 +52,19 @@ class BaseController {
 
     public function session() {
         return Session::instance();
+    }
+
+    public function auth() {
+       return $this->user? true:false;
+    }
+
+    public function role() {
+        if($this->auth()){
+            $roleId = $this->user->role_id;
+            $sql = "SELECT name FROM roles WHERE id = '$roleId'";
+            $role = (new Role)->getWhere($sql); 
+            return $role->name;
+        }
     }
 
 }

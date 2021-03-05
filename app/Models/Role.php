@@ -1,9 +1,10 @@
 <?php
+namespace App\Models;
 /**
  * class Role
  */
 
-require_once ROOT."/core/Model.php";
+use Core\Model;
 
 class Role extends Model
 {
